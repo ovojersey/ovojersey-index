@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npx static-site-generator-md posts --out posts --template posts/post-template.html --json-index posts/post-list.json",
+  "outputDirectory": ".",
+  "installCommand": "npm install static-site-generator-md"
+}
