@@ -1,5 +1,7 @@
 {
-  "rewrites": [
-    {"source": "/admin", "destination": "/static/admin/index.html"}
-  ]
+  "build": {
+    "env": {
+      "HUGO_VERSION":"0.140.0"
+    }
+  }
 }
