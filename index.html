@@ -2,146 +2,84 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ovojersey Jersey Collections Index</title>
-<meta name="description" content="Browse huge collection of football jerseys, club & national team kits by category, season, league.">
+<title>Ovojersey Jersey Index - Browse All Collections</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-body{background:#f7f8fa;color:#111;padding:24px;max-width:1400px;margin:0 auto}
-.breadcrumb{font-size:14px;color:#666;margin-bottom:8px}
-h1{font-size:28px;margin-bottom:10px}
-.sub-desc{color:#555;margin-bottom:32px;font-size:15px}
-h2{font-size:18px;margin:36px 0 16px 0}
-.grid-6{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:24px}
-.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px}
-.card-icon{font-size:36px;margin-bottom:10px}
-.card h3{font-size:16px;margin-bottom:6px}
-.card .count{font-size:13px;color:#666;margin-bottom:12px}
-.card a.browse-link{font-size:14px;color:#2563eb;text-decoration:none;font-weight:500}
-.grid-5{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:24px}
-.small-card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px}
-.small-card h4{font-size:15px;margin-bottom:4px}
-.small-card .meta{font-size:12px;color:#666}
-.section-subtitle{color:#2563eb;font-weight:600;font-size:15px;margin:12px 0 10px}
+:root{--bg:#f8f9fa;--card:#fff;--text:#1a202c;--text2:#4a5568;--border:#e2e8f0;--accent:#0058cc;--accent-light:#ebf4ff;}
+[data-theme="dark"]{--bg:#1a1a1a;--card:#242424;--text:#e2e8f0;--text2:#a0aec0;--border:#2d3748;--accent:#63b3ed;--accent-light:#1a365d;}
+*{box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);max-width:1300px;margin:0 auto;padding:24px 20px;line-height:1.6;}
+h1{font-size:28px;margin:0 0 8px;}
+.subtitle{color:var(--text2);margin-bottom:28px;font-size:15px;}
+h2{font-size:20px;margin:36px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+h3{font-size:15px;margin:20px 0 10px;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;}
+.breadcrumb{font-size:13px;color:var(--text2);margin-bottom:16px;}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-bottom:12px;}
+.cat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px 20px;text-decoration:none;color:var(--text);transition:all .2s;display:flex;flex-direction:column;gap:8px;}
+.cat-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.1);border-color:var(--accent);}
+.cat-icon{font-size:36px;}
+.cat-title{font-size:17px;font-weight:700;}
+.cat-count{font-size:13px;color:var(--text2);}
+.cat-arrow{font-size:12px;color:var(--accent);margin-top:auto;}
+.league-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;}
+.league-item{background:var(--card);border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.league-name{display:flex;align-items:center;gap:10px;padding:12px 16px;cursor:pointer;transition:background .15s;}
+.league-name:hover{background:var(--accent-light);}
+.league-title{flex:1;font-weight:600;font-size:14px;}
+.league-count{font-size:12px;color:var(--text2);background:var(--bg);padding:2px 8px;border-radius:10px;}
+.league-arrow{font-size:11px;color:var(--text2);}
+.league-cats{padding:10px 16px 12px;display:flex;flex-wrap:wrap;gap:6px;border-top:1px solid var(--border);}
+.league-cat-link{display:inline-flex;align-items:center;gap:4px;font-size:12px;padding:4px 10px;border-radius:6px;background:var(--accent-light);color:var(--accent);text-decoration:none;font-weight:500;}
+.league-cat-link:hover{background:var(--accent);color:#fff;}
+.league-cat-link span{font-size:11px;opacity:.8;}
+.nt-region{font-size:13px;font-weight:700;color:var(--text2);margin:16px 0 8px;text-transform:uppercase;letter-spacing:.5px;}
+.nt-grid{display:flex;flex-wrap:wrap;gap:6px;}
+.nt-tag{display:inline-block;padding:5px 12px;border:1px solid var(--border);border-radius:16px;font-size:13px;text-decoration:none;color:var(--text);background:var(--card);transition:all .15s;}
+.nt-tag:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
+.special-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+.special-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;text-decoration:none;color:var(--text);transition:all .2s;}
+.special-card:hover{border-color:var(--accent);transform:translateY(-2px);}
+.special-icon{font-size:24px;margin-bottom:6px;}
+.special-title{font-weight:600;font-size:15px;margin-bottom:4px;}
+.special-desc{font-size:12px;color:var(--text2);line-height:1.4;}
+.theme-btn{position:fixed;top:16px;right:16px;padding:8px 14px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);cursor:pointer;font-size:13px;z-index:100;}
+.theme-btn:hover{border-color:var(--accent);}
+.back-top{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;font-size:18px;display:none;align-items:center;justify-content:center;z-index:100;}
 </style>
 </head>
 <body>
+<button class="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
 <div class="breadcrumb">Home / All Categories</div>
 <h1>Ovojersey Jersey Collections Index</h1>
-<div class="sub-desc">Browse 10918+ products — by category, season, league, jersey type, theme, or national team.</div>
-
+<p class="subtitle">Browse 10918+ products — by category, season, league, jersey type, theme, or national team.</p>
 <h2>By Category</h2>
-<div class="grid-6">
-    <div class="card">
-        <div class="card-icon">👕</div>
-        <h3>Men's Jerseys</h3>
-        <div class="count">3018 products</div>
-        <a class="browse-link" href="list.html">Browse →</a>
-    </div>
-    <div class="card">
-        <div class="card-icon">👚</div>
-        <h3>Women's Jerseys</h3>
-        <div class="count">2386 products</div>
-        <a class="browse-link" href="list.html">Browse →</a>
-    </div>
-    <div class="card">
-        <div class="card-icon">🧒</div>
-        <h3>Kids & Youth Jerseys</h3>
-        <div class="count">3035 products</div>
-        <a class="browse-link" href="list.html">Browse →</a>
-    </div>
-    <div class="card">
-        <div class="card-icon">✍️</div>
-        <h3>Signed Jerseys</h3>
-        <div class="count">136 products</div>
-        <a class="browse-link" href="list.html">Browse →</a>
-    </div>
-    <div class="card">
-        <div class="card-icon">⚽</div>
-        <h3>Training Jerseys</h3>
-        <div class="count">339 products</div>
-        <a class="browse-link" href="list.html">Browse →</a>
-    </div>
-    <div class="card">
-        <div class="card-icon">🏆</div>
-        <h3>Other Jerseys</h3>
-        <div class="count">2004 products</div>
-        <a class="browse-link" href="list.html">Browse →</a>
-    </div>
-</div>
-
+<div class="cat-grid"><a href="list.html" class="cat-card"><span class="cat-icon">👕</span><span class="cat-title">Men's Jerseys</span><span class="cat-count">3018 products</span><span class="cat-arrow">Browse →</span></a><a href="list.html" class="cat-card"><span class="cat-icon">👚</span><span class="cat-title">Women's Jerseys</span><span class="cat-count">2386 products</span><span class="cat-arrow">Browse →</span></a><a href="list.html" class="cat-card"><span class="cat-icon">🧒</span><span class="cat-title">Kids & Youth Jerseys</span><span class="cat-count">3035 products</span><span class="cat-arrow">Browse →</span></a><a href="list.html" class="cat-card"><span class="cat-icon">✍️</span><span class="cat-title">Signed Jerseys</span><span class="cat-count">136 products</span><span class="cat-arrow">Browse →</span></a><a href="list.html" class="cat-card"><span class="cat-icon">⚽</span><span class="cat-title">Training Jerseys</span><span class="cat-count">339 products</span><span class="cat-arrow">Browse →</span></a><a href="list.html" class="cat-card"><span class="cat-icon">🏆</span><span class="cat-title">Other Jerseys</span><span class="cat-count">2004 products</span><span class="cat-arrow">Browse →</span></a></div>
 <h2>By Season / Year</h2>
-<div class="section-subtitle">CURRENT & UPCOMING</div>
-<div class="grid-5">
-    <div class="small-card">
-        <h4>2026‑27 Season</h4>
-        <div class="meta">New 2026‑27 kits · 215 items</div>
-    </div>
-    <div class="small-card">
-        <h4>2025‑26 Season</h4>
-        <div class="meta">Current 2025‑26 season · 5,512 items</div>
-    </div>
-    <div class="small-card">
-        <h4>2026 Calendar Year</h4>
-        <div class="meta">2026 releases · 386 items</div>
-    </div>
-    <div class="small-card">
-        <h4>2025 Calendar Year</h4>
-        <div class="meta">2025 releases · 598 items</div>
-    </div>
-</div>
+<h3>Current & Upcoming</h3><div class="special-grid"><a href="list.html?q=2026-27" class="special-card"><div class="special-title">2026-27 Season</div><div class="special-desc">New 2026-27 kits · 215 items</div></a><a href="list.html?q=2025-26" class="special-card"><div class="special-title">2025-26 Season</div><div class="special-desc">Current 2025-26 season · 5,512 items</div></a><a href="list.html?q=2026" class="special-card"><div class="special-title">2026 Calendar Year</div><div class="special-desc">2026 releases · 386 items</div></a><a href="list.html?q=2025" class="special-card"><div class="special-title">2025 Calendar Year</div><div class="special-desc">2025 releases · 598 items</div></a></div><h3>Recent Seasons</h3><div class="special-grid"><a href="list.html?q=2024-25" class="special-card"><div class="special-title">2024-25 Season</div><div class="special-desc">Last season kits · 2,984 items</div></a><a href="list.html?q=2024" class="special-card"><div class="special-title">2024 Calendar Year</div><div class="special-desc">2024 releases · 243 items</div></a><a href="list.html?q=2023-24" class="special-card"><div class="special-title">2023-24 Season</div><div class="special-desc">2023-24 season · 259 items</div></a><a href="list.html?q=2023" class="special-card"><div class="special-title">2023 Calendar Year</div><div class="special-desc">2023 releases · 40 items</div></a><a href="list.html?q=2022" class="special-card"><div class="special-title">2022 World Cup</div><div class="special-desc">2022 World Cup & releases · 86 items</div></a><a href="list.html?q=2021-22" class="special-card"><div class="special-title">2021-22 Season</div><div class="special-desc">2021-22 season · 15 items</div></a></div><h3>Retro & Classic</h3><div class="special-grid"><a href="list.html?q=201" class="special-card"><div class="special-title">2010s Retro</div><div class="special-desc">2010-2019 classic kits · 30+ items</div></a><a href="list.html?q=200" class="special-card"><div class="special-title">2000s Retro</div><div class="special-desc">2000-2009 vintage jerseys · 50+ items</div></a><a href="list.html?q=199" class="special-card"><div class="special-title">1990s Retro</div><div class="special-desc">1990s throwback shirts · 70+ items</div></a><a href="list.html?q=198" class="special-card"><div class="special-title">1980s Retro</div><div class="special-desc">1980s classic jerseys · 70+ items</div></a><a href="list.html?q=197" class="special-card"><div class="special-title">1970s Retro</div><div class="special-desc">1970s vintage kits ·15+ items</div></a><a href="list.html?q=retro" class="special-card"><div class="special-title">All Retro</div><div class="special-desc">All vintage & retro · 296 items</div></a></div>
+<h2>By Jersey Type</h2>
+<div class="special-grid"><a href="list.html?q=home" class="special-card"><div class="special-icon">🏠</div><div class="special-title">Home Jerseys</div><div class="special-desc">Classic home kits in club colors · 3,724 items</div></a><a href="list.html?q=away" class="special-card"><div class="special-icon">✈️</div><div class="special-title">Away Jerseys</div><div class="special-desc">Alternative away strips · 2,948 items</div></a><a href="list.html?q=third" class="special-card"><div class="special-icon">3️⃣</div><div class="special-title">Third Jerseys</div><div class="special-desc">Third & alternate kits · 2,710 items</div></a><a href="list.html?q=long-sleeve" class="special-card"><div class="special-icon">🧥</div><div class="special-title">Long Sleeve</div><div class="special-desc">Long sleeve jerseys · 472 items</div></a><a href="list.html?q=goalkeeper" class="special-card"><div class="special-icon">🧤</div><div class="special-title">Goalkeeper</div><div class="special-desc">Goalkeeper kits · 57 items</div></a><a href="list.html?q=retro" class="special-card"><div class="special-icon">📺</div><div class="special-title">Retro & Classic</div><div class="special-desc">Vintage & throwback jerseys · 411 items</div></a><a href="list.html?q=special" class="special-card"><div class="special-icon">✨</div><div class="special-title">Special Edition</div><div class="special-desc">Limited & special editions · 227 items</div></a><a href="list.html?q=anniversary" class="special-card"><div class="special-icon">🎂</div><div class="special-title">Anniversary</div><div class="special-desc">Club anniversary editions · 216 items</div></a></div>
+<h2>By League</h2>
+<p style="color:var(--text2);font-size:13px;margin-top:-8px;margin-bottom:14px;">Click a league to expand available categories (Men's / Women's / Kids / Signed / etc.)</p>
+<div class="league-grid"><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Premier League</span><span class="league-count">2418 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=premier-league" class="league-cat-link">Men <span>418</span></a><a href="list.html?q=premier-league" class="league-cat-link">Women <span>376</span></a><a href="list.html?q=premier-league" class="league-cat-link">Kids <span>497</span></a><a href="list.html?q=premier-league" class="league-cat-link">Signed <span>64</span></a><a href="list.html?q=premier-league" class="league-cat-link">Training <span>147</span></a><a href="list.html?q=premier-league" class="league-cat-link">Other <span>916</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Bundesliga</span><span class="league-count">1613 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=bundesliga" class="league-cat-link">Men <span>534</span></a><a href="list.html?q=bundesliga" class="league-cat-link">Women <span>471</span></a><a href="list.html?q=bundesliga" class="league-cat-link">Kids <span>537</span></a><a href="list.html?q=bundesliga" class="league-cat-link">Signed <span>3</span></a><a href="list.html?q=bundesliga" class="league-cat-link">Training <span>27</span></a><a href="list.html?q=bundesliga" class="league-cat-link">Other <span>41</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">National Teams</span><span class="league-count">1149 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=national-teams" class="league-cat-link">Men <span>282</span></a><a href="list.html?q=national-teams" class="league-cat-link">Women <span>228</span></a><a href="list.html?q=national-teams" class="league-cat-link">Kids <span>300</span></a><a href="list.html?q=national-teams" class="league-cat-link">Signed <span>23</span></a><a href="list.html?q=national-teams" class="league-cat-link">Training <span>27</span></a><a href="list.html?q=national-teams" class="league-cat-link">Other <span>289</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Serie A</span><span class="league-count">1074 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=serie-a" class="league-cat-link">Men <span>320</span></a><a href="list.html?q=serie-a" class="league-cat-link">Women <span>216</span></a><a href="list.html?q=serie-a" class="league-cat-link">Kids <span>471</span></a><a href="list.html?q=serie-a" class="league-cat-link">Signed <span>10</span></a><a href="list.html?q=serie-a" class="league-cat-link">Training <span>34</span></a><a href="list.html?q=serie-a" class="league-cat-link">Other <span>23</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">La Liga</span><span class="league-count">1014 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=la-liga" class="league-cat-link">Men <span>299</span></a><a href="list.html?q=la-liga" class="league-cat-link">Women <span>264</span></a><a href="list.html?q=la-liga" class="league-cat-link">Kids <span>333</span></a><a href="list.html?q=la-liga" class="league-cat-link">Signed <span>19</span></a><a href="list.html?q=la-liga" class="league-cat-link">Training <span>20</span></a><a href="list.html?q=la-liga" class="league-cat-link">Other <span>79</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Ligue 1</span><span class="league-count">682 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=ligue-1" class="league-cat-link">Men <span>245</span></a><a href="list.html?q=ligue-1" class="league-cat-link">Women <span>194</span></a><a href="list.html?q=ligue-1" class="league-cat-link">Kids <span>217</span></a><a href="list.html?q=ligue-1" class="league-cat-link">Signed <span>1</span></a><a href="list.html?q=ligue-1" class="league-cat-link">Training <span>11</span></a><a href="list.html?q=ligue-1" class="league-cat-link">Other <span>14</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Eredivisie</span><span class="league-count">408 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=eredivisie" class="league-cat-link">Men <span>124</span></a><a href="list.html?q=eredivisie" class="league-cat-link">Women <span>130</span></a><a href="list.html?q=eredivisie" class="league-cat-link">Kids <span>143</span></a><a href="list.html?q=eredivisie" class="league-cat-link">Training <span>2</span></a><a href="list.html?q=eredivisie" class="league-cat-link">Other <span>9</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">MLS</span><span class="league-count">250 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=mls" class="league-cat-link">Training <span>14</span></a><a href="list.html?q=mls" class="league-cat-link">Other <span>236</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Swiss Super League</span><span class="league-count">156 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=swiss-super-league" class="league-cat-link">Men <span>51</span></a><a href="list.html?q=swiss-super-league" class="league-cat-link">Women <span>51</span></a><a href="list.html?q=swiss-super-league" class="league-cat-link">Kids <span>54</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Liga MX</span><span class="league-count">129 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=liga-mx" class="league-cat-link">Men <span>42</span></a><a href="list.html?q=liga-mx" class="league-cat-link">Women <span>38</span></a><a href="list.html?q=liga-mx" class="league-cat-link">Kids <span>38</span></a><a href="list.html?q=liga-mx" class="league-cat-link">Training <span>6</span></a><a href="list.html?q=liga-mx" class="league-cat-link">Other <span>5</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Primeira Liga</span><span class="league-count">89 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=primeira-liga" class="league-cat-link">Men <span>41</span></a><a href="list.html?q=primeira-liga" class="league-cat-link">Women <span>21</span></a><a href="list.html?q=primeira-liga" class="league-cat-link">Kids <span>19</span></a><a href="list.html?q=primeira-liga" class="league-cat-link">Training <span>1</span></a><a href="list.html?q=primeira-liga" class="league-cat-link">Other <span>7</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Belgian Pro League</span><span class="league-count">80 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=belgian-pro-league" class="league-cat-link">Men <span>41</span></a><a href="list.html?q=belgian-pro-league" class="league-cat-link">Women <span>19</span></a><a href="list.html?q=belgian-pro-league" class="league-cat-link">Kids <span>19</span></a><a href="list.html?q=belgian-pro-league" class="league-cat-link">Other <span>1</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Brasileirão</span><span class="league-count">66 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=brasileiro" class="league-cat-link">Men <span>29</span></a><a href="list.html?q=brasileiro" class="league-cat-link">Women <span>8</span></a><a href="list.html?q=brasileiro" class="league-cat-link">Kids <span>9</span></a><a href="list.html?q=brasileiro" class="league-cat-link">Signed <span>1</span></a><a href="list.html?q=brasileiro" class="league-cat-link">Other <span>19</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Scottish Premiership</span><span class="league-count">52 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=scottish-premiership" class="league-cat-link">Training <span>3</span></a><a href="list.html?q=scottish-premiership" class="league-cat-link">Other <span>49</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Saudi Pro League</span><span class="league-count">51 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=saudi-pro-league" class="league-cat-link">Men <span>18</span></a><a href="list.html?q=saudi-pro-league" class="league-cat-link">Women <span>12</span></a><a href="list.html?q=saudi-pro-league" class="league-cat-link">Kids <span>18</span></a><a href="list.html?q=saudi-pro-league" class="league-cat-link">Training <span>2</span></a><a href="list.html?q=saudi-pro-league" class="league-cat-link">Other <span>1</span></a></div></div><div class="league-item"><div class="league-name" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display=='block'?'none':'block'"><span class="league-title">Allsvenskan</span><span class="league-count">41 products</span><span class="league-arrow">▾</span></div><div class="league-cats" style="display:none;"><a href="list.html?q=allsvenskan" class="league-cat-link">Men <span>13</span></a><a href="list.html?q=allsvenskan" class="league-cat-link">Women <span>14</span></a><a href="list.html?q=allsvenskan" class="league-cat-link">Kids <span>13</span></a><a href="list.html?q=allsvenskan" class="league-cat-link">Training <span>1</span></a></div></div></div>
+<h2>By Special Theme</h2>
+<div class="special-grid"><a href="list.html?q=world-cup" class="special-card"><div class="special-icon">🌍</div><div class="special-title">World Cup</div><div class="special-desc">National team World Cup jerseys · 455 items</div></a><a href="list.html?q=ucl" class="special-card"><div class="special-icon">🏆</div><div class="special-title">UCL / Champions League</div><div class="special-desc">Champions League final & special kits · 104 items</div></a><a href="list.html?q=centenary" class="special-card"><div class="special-icon">💯</div><div class="special-title">Centenary</div><div class="special-desc">100‑year anniversary editions · 4 items</div></a><a href="list.html?q=commemorative" class="special-card"><div class="special-icon">🎗️</div><div class="special-title">Commemorative</div><div class="special-desc">Special commemorative shirts · 5 items</div></a><a href="list.html?q=oktoberfest" class="special-card"><div class="special-icon">🍺</div><div class="special-title">Oktoberfest</div><div class="special-desc">Bayern Munich Oktoberfest special · 10 items</div></a><a href="list.html?q=christmas" class="special-card"><div class="special-icon">🎄</div><div class="special-title">Christmas</div><div class="special-desc">Holiday special editions · 4 items</div></a><a href="list.html?q=year-of" class="special-card"><div class="special-icon">🐴</div><div class="special-title">Year of the Horse</div><div class="special-desc">Chinese New Year special · 2 items</div></a></div>
+<h2>By Version & Collectible</h2>
+<div class="special-grid"><a href="list.html?q=authentic" class="special-card"><div class="special-icon">⭐</div><div class="special-title">Authentic Player Version</div><div class="special-desc">Match‑worn quality player kits · 136 items</div></a><a href="list.html?q=stadium" class="special-card"><div class="special-icon">👥</div><div class="special-title">Stadium Fan Version</div><div class="special-desc">Replica fan jerseys · 59 items</div></a><a href="list.html?q=signed" class="special-card"><div class="special-icon">✍️</div><div class="special-title">Signed with COA</div><div class="special-desc">Autographed jerseys with certificate · 136 items</div></a><a href="list.html?q=nba" class="special-card"><div class="special-icon">🏀</div><div class="special-title">NBA / Basketball</div><div class="special-desc">Kobe, LeBron, Curry & more · 18 items</div></a></div>
+<h2>National Teams</h2>
+<div><div class="nt-region">Europe</div><div class="nt-grid"><a href="list.html?q=germany" class="nt-tag">Germany</a><a href="list.html?q=portugal" class="nt-tag">Portugal</a><a href="list.html?q=spain" class="nt-tag">Spain</a><a href="list.html?q=england" class="nt-tag">England</a><a href="list.html?q=italy" class="nt-tag">Italy</a><a href="list.html?q=france" class="nt-tag">France</a><a href="list.html?q=ireland" class="nt-tag">Ireland</a><a href="list.html?q=albania" class="nt-tag">Albania</a><a href="list.html?q=austria" class="nt-tag">Austria</a><a href="list.html?q=belgium" class="nt-tag">Belgium</a><a href="list.html?q=croatia" class="nt-tag">Croatia</a><a href="list.html?q=czech" class="nt-tag">Czech Republic</a><a href="list.html?q=denmark" class="nt-tag">Denmark</a><a href="list.html?q=georgia" class="nt-tag">Georgia</a><a href="list.html?q=hungary" class="nt-tag">Hungary</a><a href="list.html?q=iceland" class="nt-tag">Iceland</a><a href="list.html?q=netherlands" class="nt-tag">Netherlands</a><a href="list.html?q=norway" class="nt-tag">Norway</a><a href="list.html?q=poland" class="nt-tag">Poland</a><a href="list.html?q=scotland" class="nt-tag">Scotland</a><a href="list.html?q=sweden" class="nt-tag">Sweden</a><a href="list.html?q=switzerland" class="nt-tag">Switzerland</a><a href="list.html?q=wales" class="nt-tag">Wales</a></div><div class="nt-region">South America</div><div class="nt-grid"><a href="list.html?q=argentina" class="nt-tag">Argentina</a><a href="list.html?q=brazil" class="nt-tag">Brazil</a><a href="list.html?q=colombia" class="nt-tag">Colombia</a><a href="list.html?q=chile" class="nt-tag">Chile</a><a href="list.html?q=ecuador" class="nt-tag">Ecuador</a><a href="list.html?q=peru" class="nt-tag">Peru</a><a href="list.html?q=uruguay" class="nt-tag">Uruguay</a><a href="list.html?q=venezuela" class="nt-tag">Venezuela</a></div><div class="nt-region">North America</div><div class="nt-grid"><a href="list.html?q=mexico" class="nt-tag">Mexico</a><a href="list.html?q=usa" class="nt-tag">Usa</a><a href="list.html?q=canada" class="nt-tag">Canada</a><a href="list.html?q=costa‑rica" class="nt-tag">Costa Rica</a></div><div class="nt-region">Africa</div><div class="nt-grid"><a href="list.html?q=cameroon" class="nt-tag">Cameroon</a><a href="list.html?q=egypt" class="nt-tag">Egypt</a><a href="list.html?q=morocco" class="nt-tag">Morocco</a><a href="list.html?q=senegal" class="nt-tag">Senegal</a><a href="list.html?q=mali" class="nt-tag">Mali</a><a href="list.html?q=nigeria" class="nt-tag">Nigeria</a><a href="list.html?q=ghana" class="nt-tag">Ghana</a></div><div class="nt-region">Asia & Oceania</div><div class="nt-grid"><a href="list.html?q=australia" class="nt-tag">Australia</a><a href="list.html?q=japan" class="nt-tag">Japan</a></div></div>
 
-<div class="section-subtitle">RECENT SEASONS</div>
-<div class="grid-5">
-    <div class="small-card">
-        <h4>2024‑25 Season</h4>
-        <div class="meta">Last season kits · 2,984 items</div>
-    </div>
-    <div class="small-card">
-        <h4>2024 Calendar Year</h4>
-        <div class="meta">2024 releases · 243 items</div>
-    </div>
-    <div class="small-card">
-        <h4>2023‑24 Season</h4>
-        <div class="meta">2023‑24 season · 259 items</div>
-    </div>
-    <div class="small-card">
-        <h4>2023 Calendar Year</h4>
-        <div class="meta">2023 releases · 40 items</div>
-    </div>
-    <div class="small-card">
-        <h4>2022 World Cup</h4>
-        <div class="meta">2022 World Cup & releases · 86 items</div>
-    </div>
-    <div class="small-card">
-        <h4>2021‑22 Season</h4>
-        <div class="meta">2021‑22 season · 15 items</div>
-    </div>
-</div>
-
-<div class="section-subtitle">RETRO & CLASSIC</div>
-<div class="grid-5">
-    <div class="small-card">
-        <h4>2010s Retro</h4>
-        <div class="meta">2010‑2019 classic kits · 30+ items</div>
-    </div>
-    <div class="small-card">
-        <h4>2000s Retro</h4>
-        <div class="meta">2000‑2009 vintage jerseys · 50+ items</div>
-    </div>
-    <div class="small-card">
-        <h4>1990s Retro</h4>
-        <div class="meta">1990s throwback shirts · 70+ items</div>
-    </div>
-    <div class="small-card">
-        <h4>1980s Retro</h4>
-        <div class="meta">1980s classic jerseys · 70+ items</div>
-    </div>
-    <div class="small-card">
-        <h4>1970s Retro</h4>
-        <div class="meta">1970s vintage kits ·15+ items</div>
-    </div>
-</div>
-
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+let dark=localStorage.getItem('darkMode')==='1';
+function applyTheme(){
+  if(dark){document.documentElement.setAttribute('data-theme','dark');document.querySelector('.theme-btn').textContent='☀️ Light';}
+  else{document.documentElement.removeAttribute('data-theme');document.querySelector('.theme-btn').textContent='🌙 Dark';}
+}
+applyTheme();
+function toggleTheme(){dark=!dark;localStorage.setItem('darkMode',dark?'1':'0');applyTheme();}
+const bt=document.getElementById('backTop');
+window.addEventListener('scroll',function(){bt.style.display=window.scrollY>400?'flex':'none';});
+</script>
 </body>
 </html>
