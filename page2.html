@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Football Jersey Category Index - Page 2</title>
-<meta name="description" content="Jersey category link listing page 2. National‑team and club football jersey categories.">
+<meta name="description" content="Jersey category link listing page 2. Club football jersey categories.">
 <style>
 :root {
   --bg: #f7f9fc;
@@ -122,7 +122,7 @@ body {
   flex: 1;
   min-width: 260px;
   padding: 12px 14px;
-  font-size: 15px;
+  font-size: 16px;
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--bg);
@@ -164,12 +164,16 @@ body {
   margin-bottom: 28px;
 }
 
-.category-section h2 {
+.category-title {
   font-size: 20px;
   margin-bottom: 14px;
   padding-left: 12px;
   border-left: 4px solid var(--accent);
   color: var(--text);
+  cursor: pointer;
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
 
 .link-grid {
@@ -327,23 +331,18 @@ mark {
   body {
     padding: 18px 16px 32px;
   }
-
   .site-header h1 {
     font-size: 24px;
   }
-
   .link-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .toolbar {
     padding: 14px;
   }
-
   .pagination {
     gap: 6px;
   }
-
   .pagination a,
   .pagination span {
     min-width: 36px;
@@ -368,13 +367,13 @@ mark {
     <div class="page-title">Page 2</div>
   </div>
   <h1>Football Jersey Category Index</h1>
-  <p>Listing page 2 · Club football jersey categories</p>
+  <p>Listing page 2 · Club teams. Click category title to toggle, or use global switch.</p>
 </div>
 
 <div class="toolbar">
   <div class="search-row">
     <input type="text" id="searchInput" placeholder="Search team name...">
-    <button class="btn" id="toggleAllBtn">Expand / Collapse</button>
+    <button class="btn" id="toggleAllBtn">Expand / Collapse All</button>
     <button class="btn" id="copyLinksBtn">Copy URLs</button>
     <button class="btn" id="copyTextBtn">Copy Names</button>
   </div>
@@ -382,25 +381,85 @@ mark {
 </div>
 
 <div class="category-section">
-  <h2>Premier League Clubs Continued</h2>
+  <h2 class="category-title"><span class="arrow">▾</span> Premier League Clubs</h2>
   <div class="link-grid">
-    <a href="https://ovojersey.com/categories/brentford‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/manchester-united-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🔴</span>
+      <span class="text">Manchester United Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/liverpool-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🔴</span>
+      <span class="text">Liverpool Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/chelsea-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🔵</span>
+      <span class="text">Chelsea Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/manchester-city-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🔵</span>
+      <span class="text">Manchester City Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/arsenal-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🔴</span>
+      <span class="text">Arsenal Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/tottenham-hotspur-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">⚪</span>
+      <span class="text">Tottenham Hotspur Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/newcastle-united-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">⚫</span>
+      <span class="text">Newcastle United Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/aston-villa-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🟤</span>
+      <span class="text">Aston Villa Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/west-ham-united-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🔴</span>
+      <span class="text">West Ham United Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/leeds-united-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">⚪</span>
+      <span class="text">Leeds United Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/everton-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🔵</span>
+      <span class="text">Everton Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/leicester-city-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🦊</span>
+      <span class="text">Leicester City Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/crystal-palace-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🦅</span>
+      <span class="text">Crystal Palace Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/fulham-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">⚪</span>
+      <span class="text">Fulham Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/brighton-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+      <span class="icon">🌊</span>
+      <span class="text">Brighton Jersey</span>
+    </a>
+    <a href="https://ovojersey.com/categories/brentford-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🐝</span>
       <span class="text">Brentford Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/wolverhampton‑wanderers‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/wolverhampton-wanderers-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🐺</span>
       <span class="text">Wolverhampton Wanderers Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/nottingham‑forest‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/nottingham-forest-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🌳</span>
       <span class="text">Nottingham Forest Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/sheffield‑united‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/sheffield-united-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">⚔️</span>
       <span class="text">Sheffield United Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/bournemouth‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/bournemouth-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🍒</span>
       <span class="text">Bournemouth Jersey</span>
     </a>
@@ -408,85 +467,85 @@ mark {
 </div>
 
 <div class="category-section">
-  <h2>La Liga Clubs</h2>
+  <h2 class="category-title"><span class="arrow">▾</span> La Liga Clubs</h2>
   <div class="link-grid">
-    <a href="https://ovojersey.com/categories/real‑madrid‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/real-madrid-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">⚪</span>
       <span class="text">Real Madrid Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/fc‑barcelona‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/fc-barcelona-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵🔴</span>
       <span class="text">FC Barcelona Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/atletico‑madrid‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/atletico-madrid-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">Atletico Madrid Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/sevilla‑fc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/sevilla-fc-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">Sevilla FC Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/valencia‑cf‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/valencia-cf-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🟠⚪</span>
       <span class="text">Valencia CF Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/real‑betis‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/real-betis-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🟢⚪</span>
       <span class="text">Real Betis Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/athletic‑club‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/athletic-club-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">Athletic Club Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/villarreal‑cf‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/villarreal-cf-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🟡</span>
       <span class="text">Villarreal CF Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/real‑sociedad‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/real-sociedad-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵⚪</span>
       <span class="text">Real Sociedad Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/celta‑vigo‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/celta-vigo-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵⚪</span>
       <span class="text">Celta Vigo Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/girona‑fc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/girona-fc-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">Girona FC Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/ud‑las‑palmas‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/ud-las-palmas-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵🟡</span>
       <span class="text">UD Las Palmas Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/ca‑osasuna‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/ca-osasuna-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">CA Osasuna Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/getafe‑cf‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/getafe-cf-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵⚪</span>
       <span class="text">Getafe CF Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/vallecano‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/vallecano-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">Vallecano Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/real‑mallorca‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/real-mallorca-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚫</span>
       <span class="text">Real Mallorca Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/alaves‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/alaves-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵⚪</span>
       <span class="text">Alaves Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/levante‑ud‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/levante-ud-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">Levante UD Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/elche‑cf‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/elche-cf-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵⚪</span>
       <span class="text">Elche CF Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/real‑oviedo‑football‑club‑jersey" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/real-oviedo-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵⚪</span>
       <span class="text">Real Oviedo Jersey</span>
     </a>
@@ -494,61 +553,61 @@ mark {
 </div>
 
 <div class="category-section">
-  <h2>Bundesliga Clubs</h2>
+  <h2 class="category-title"><span class="arrow">▾</span> Bundesliga Clubs</h2>
   <div class="link-grid">
-    <a href="https://ovojersey.com/categories/bayern‑munich" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/bayern-munich" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴</span>
       <span class="text">Bayern Munich Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/borussia‑dortmund" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/borussia-dortmund" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🟡⚫</span>
       <span class="text">Borussia Dortmund Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/bayer‑04‑leverkusen" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/bayer-04-leverkusen" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚫</span>
       <span class="text">Bayer 04 Leverkusen Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/rb‑leipzig" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/rb-leipzig" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">RB Leipzig Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/vfb‑stuttgart" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/vfb-stuttgart" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">VfB Stuttgart Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/eintracht‑frankfurt" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/eintracht-frankfurt" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">Eintracht Frankfurt Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/1‑fc‑union‑berlin" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/1-fc-union-berlin" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">1 FC Union Berlin Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/sv‑werder‑bremen" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/sv-werder-bremen" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🟢⚪</span>
       <span class="text">SV Werder Bremen Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/borussia‑monchengladbach" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/borussia-monchengladbach" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">⚫⚪</span>
       <span class="text">Borussia Monchengladbach Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/vfl‑wolfsburg" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/vfl-wolfsburg" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🟢⚪</span>
       <span class="text">VfL Wolfsburg Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/sc‑freiburg" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/sc-freiburg" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">SC Freiburg Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/1‑fsv‑mainz‑05" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/1-fsv-mainz-05" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">1 FSV Mainz 05 Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/fc‑augsburg" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/fc-augsburg" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔴⚪</span>
       <span class="text">FC Augsburg Jersey</span>
     </a>
-    <a href="https://ovojersey.com/categories/tsg‑hoffenheim" target="_blank" rel="noopener noreferrer" class="link-card">
+    <a href="https://ovojersey.com/categories/tsg-hoffenheim" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🔵⚪</span>
       <span class="text">TSG Hoffenheim Jersey</span>
     </a>
@@ -556,7 +615,7 @@ mark {
 </div>
 
 <div class="pagination">
-  <a href="page1.html" class="arrow">‹ Prev</a>
+  <a href="page1.html">‹ Prev</a>
   <a href="page1.html">1</a>
   <span class="current">2</span>
   <a href="page3.html">3</a>
@@ -583,92 +642,101 @@ function applyTheme() {
     themeBtn.textContent = '🌙 Dark';
   }
 }
-
 applyTheme();
-
-themeBtn.addEventListener('click', () => {
+themeBtn.addEventListener('click', ()=>{
   dark = !dark;
   localStorage.setItem('darkMode', dark ? '1' : '0');
   applyTheme();
 });
 
+// 分类标题独立点击折叠
+document.querySelectorAll('.category-title').forEach(titleEl=>{
+  titleEl.addEventListener('click',()=>{
+    const grid = titleEl.nextElementSibling;
+    const arrow = titleEl.querySelector('.arrow');
+    if(grid.style.display === 'none'){
+      grid.style.display='grid';
+      arrow.textContent='▾';
+    }else{
+      grid.style.display='none';
+      arrow.textContent='▿';
+    }
+  })
+});
+
+// 全局总开关
+let globalOpen = true;
+document.getElementById('toggleAllBtn').addEventListener('click',()=>{
+  globalOpen = !globalOpen;
+  document.querySelectorAll('.category-section').forEach(sec=>{
+    const grid = sec.querySelector('.link-grid');
+    const arrow = sec.querySelector('.category-title .arrow');
+    if(globalOpen){
+      grid.style.display='grid';
+      arrow.textContent='▾';
+    }else{
+      grid.style.display='none';
+      arrow.textContent='▿';
+    }
+  })
+});
+
 const searchInput = document.getElementById('searchInput');
 const linkCards = document.querySelectorAll('.link-card');
 const linkCountInfo = document.getElementById('linkCountInfo');
-
-linkCards.forEach(card => {
+linkCards.forEach(card=>{
   card._text = card.querySelector('.text').textContent.toLowerCase();
 });
-
 linkCountInfo.innerText = `Total links on current page: ${linkCards.length}`;
 
-document.addEventListener('keydown', function (e) {
-  if (e.altKey && e.key.toLowerCase() === 's') {
-    e.preventDefault();
-    searchInput.focus();
-  }
-  if (e.key === 'Escape') {
-    searchInput.value = '';
-    searchInput.dispatchEvent(new Event('input'));
-  }
+document.addEventListener('keydown',function(e){
+  if(e.altKey && e.key.toLowerCase()==='s'){ e.preventDefault(); searchInput.focus(); }
+  if(e.key === 'Escape'){ searchInput.value=''; searchInput.dispatchEvent(new Event('input')); }
 });
 
-searchInput.addEventListener('input', function () {
+searchInput.addEventListener('input',function(){
   const kw = this.value.toLowerCase().trim();
-
-  linkCards.forEach(card => {
+  linkCards.forEach(card=>{
     const txt = card._text;
     const textEl = card.querySelector('.text');
-
-    if (!kw) {
-      card.style.display = '';
+    if(!kw){
+      card.style.display='';
       textEl.innerHTML = textEl.textContent;
       return;
     }
-
-    if (txt.includes(kw)) {
-      card.style.display = '';
-      const reg = new RegExp(`(${kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-      textEl.innerHTML = textEl.textContent.replace(reg, '<mark>$1</mark>');
-    } else {
-      card.style.display = 'none';
+    if(txt.includes(kw)){
+      card.style.display='';
+      const reg = new RegExp(`(${kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi');
+      textEl.innerHTML = textEl.textContent.replace(reg,'<mark>$1</mark>');
+      //搜索命中自动展开父分类
+      const sec = card.closest('.category-section');
+      const grid = sec.querySelector('.link-grid');
+      const arrow = sec.querySelector('.category-title .arrow');
+      grid.style.display='grid';
+      arrow.textContent='▾';
+    }else{
+      card.style.display='none';
     }
-  });
+  })
 });
 
-let listOpen = true;
-document.getElementById('toggleAllBtn').addEventListener('click', () => {
-  const sections = document.querySelectorAll('.link-grid');
-  listOpen = !listOpen;
-  sections.forEach(s => s.style.display = listOpen ? '' : 'none');
+document.getElementById('copyLinksBtn').addEventListener('click',async ()=>{
+  const links = Array.from(linkCards).map(a=>a.href).join('\n');
+  try{ await navigator.clipboard.writeText(links); alert(`Copied ${links.split('\n').length} full URLs!`); }
+  catch(e){ alert('Copy failed, please manually select text.'); }
 });
 
-document.getElementById('copyLinksBtn').addEventListener('click', async () => {
-  const links = Array.from(linkCards).map(a => a.href).join('\n');
-  try {
-    await navigator.clipboard.writeText(links);
-    alert(`Copied ${links.split('\n').length} full URLs!`);
-  } catch (e) {
-    alert('Copy failed, please manually select text.');
-  }
-});
-
-document.getElementById('copyTextBtn').addEventListener('click', async () => {
-  const names = Array.from(linkCards).map(a => a.querySelector('.text').textContent).join('\n');
-  try {
-    await navigator.clipboard.writeText(names);
-    alert(`Copied ${names.split('\n').length} team names!`);
-  } catch (e) {
-    alert('Copy failed, please manually select text.');
-  }
+document.getElementById('copyTextBtn').addEventListener('click',async ()=>{
+  const names = Array.from(linkCards).map(a=>a.querySelector('.text').textContent).join('\n');
+  try{ await navigator.clipboard.writeText(names); alert(`Copied ${names.split('\n').length} team names!`); }
+  catch(e){ alert('Copy failed, please manually select text.'); }
 });
 
 const backTop = document.getElementById('backTop');
-window.addEventListener('scroll', () => {
-  backTop.style.display = window.scrollY > 400 ? 'flex' : 'none';
+window.addEventListener('scroll',()=>{
+  backTop.style.display = window.scrollY>400 ? 'flex':'none';
 });
-
-backTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+backTop.onclick = ()=> window.scrollTo({top:0,behavior:'smooth'});
 </script>
 </body>
 </html>
