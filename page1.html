@@ -1,80 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF‑8">
 <meta name="robots" content="noindex, follow">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Football Jersey Category Index | Ovojersey</title>
-<meta name="description" content="Complete index of football jersey category links for national teams and top club leagues. Quickly find jersey categories for Europe, South America, Africa, Asia‑Oceania and major club competitions.">
+<meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+<title>Football Jersey Category Index‑Page 1</title>
+<meta name="description" content="Jersey category link listing page 1. National‑team and club football jersey categories.">
 <style>
-body{font-family:Arial,sans-serif;max-width:1320px;margin:24px auto;padding:0 20px;color:#222;}
-h1{font-size:26px;margin-bottom:8px;}
-h2{margin-top:40px;font-size:20px;border-bottom:1px solid #dddddd;padding-bottom:8px;color:#111;}
-ul{columns:3;-webkit-columns:3;column-gap:26px;padding-left:22px;margin:12px 0 24px 0;}
-li{margin:6px 0;list-style:disc;break-inside:avoid;-webkit-break-inside:avoid;}
-a{color:#0058cc;text-decoration:none;}
-a:hover{text-decoration:underline;}
-mark{background:#fffd88;padding:0 2px;border-radius:2px;}
-.top-bar{margin-bottom:16px;}
-.top‑paginate{margin-bottom:14px;font-size:15px;}
-.control-row{margin-bottom:20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
-#searchInput{flex:1;min-width:270px;padding:10px;font-size:16px;border:1px solid #cccccc;border-radius:5px;}
-button{padding:8px 12px;font-size:14px;border:1px solid #bbbbbb;border-radius:5px;background:#f7f7f7;cursor:pointer;}
+:root{--bg:#f8f9fa;--card:#fff;--text:#1a202c;--text2:#4a5568;--border:#e2e8f0;--accent:#0058cc;--accent‑light:#ebf4ff;}
+[data‑theme="dark"]{--bg:#181818;--card:#242424;--text:#eee;--text2:#a0aec0;--border:#2d3748;--accent:#63b3ed;--accent‑light:#1a365d;}
+*{box‑sizing:border‑box;}
+body{font‑family:Arial,sans‑serif;max‑width:1300px;margin:24px auto;padding:0 20px;color:var(--text);background:var(--bg);}
+h1{font‑size:24px;}
+h2{margin‑top:36px;font‑size:20px;border‑bottom:1px solid #eee;padding‑bottom:6px;}
+ul{columns:3;‑webkit‑columns:3;column‑gap:24px;padding‑left:20px;}
+li{margin:5px 0;list‑style:disc;break‑inside:avoid;‑webkit‑break‑inside:avoid;}
+a{color:#0058cc;text‑decoration:none;}
+a:hover{text‑decoration:underline;}
+mark{background:#fffd88;padding:0 2px;}
+.top‑paginate{margin‑bottom:14px;font‑size:15px;}
+button{padding:7px 10px;font‑size:14px;border:1px solid #bbb;border‑radius:4px;background:#f7f7f7;cursor:pointer;}
 button:hover{background:#e9e9e9;}
-.info-text{margin-bottom:16px;color:#555;font-size:14px;}
-.pagination{margin-top:42px;padding-top:20px;border-top:1px solid #eee;font-size:15px;color:#555;}
-.back‑top{position:fixed;bottom:22px;right:22px;padding:8px 14px;border:1px solid #bbb;border-radius:6px;background:#f7f7f7;cursor:pointer;display:none;z-index:99;}
+.control‑row{margin‑bottom:20px;display:flex;flex‑wrap:wrap;gap:10px;align‑items:center;}
+#searchInput{flex:1;min‑width:260px;padding:10px;font‑size:16px;border:1px solid #ccc;border‑radius:4px;background:var(--card);color:var(--text);}
+#linkCountInfo{margin‑bottom:16px;color:#555;}
+.pagination{margin‑top:40px;padding‑top:20px;border‑top:1px solid #eee;font‑size:16px;display:flex;gap:6px;flex‑wrap:wrap;align‑items:center;justify‑content:center;}
+.pagination a,.pagination span{padding:6px 10px;border:1px solid #bbb;border‑radius:4px;text‑decoration:none;color:var(--text);background:var(--card);}
+.pagination .current{background:#0058cc;color:#fff;border‑color:#0058cc;}
+.theme‑btn{position:fixed;top:16px;right:16px;padding:8px 14px;border:1px solid var(--border);border‑radius:4px;background:var(--card);color:var(--text);cursor:pointer;font‑size:13px;z‑index:100;}
+.theme‑btn:hover{border‑color:var(--accent);}
+.back‑top{position:fixed;bottom:20px;right:20px;padding:8px 12px;border:1px solid #bbb;border‑radius:4px;background:#f7f7f7;cursor:pointer;display:none;z‑index:99;}
 </style>
 </head>
 <body>
-<div class="top‑paginate">Index Page • Shortcut: Alt+S focus search | Esc clear search</div>
-<div class="control-row">
-  <input type="text" id="searchInput" placeholder="Search team / league name...">
-  <button id="toggleListsBtn">Expand / Collapse All</button>
-  <button id="copyAllUrlBtn">Copy all URLs</button>
-  <button id="copyAllNameBtn">Copy team names</button>
-  <button id="darkModeBtn">Dark / Light Mode</button>
+<button class="theme‑btn" onclick="toggleTheme()">🌙 Dark</button>
+<div class="top‑paginate">
+<a href="index.html">← Back to Index Home</a>
+<span style="margin‑left:12px;">Page 1 | Shortcut: Alt+S focus search | Esc clear search</span>
 </div>
-<div class="info-text" id="countInfo"></div>
-<h1>Football Jersey Category Index</h1>
-<p>Index page for national‑team and club football jersey categories. All links open new tab to Ovojersey category pages.</p>
+<div class="control‑row">
+  <input type="text" id="searchInput" placeholder="Search team name...">
+  <button id="toggleAllBtn">Expand / Collapse Lists</button>
+  <button id="copyLinksBtn">Copy full URLs</button>
+  <button id="copyTextBtn">Copy team names</button>
+  <button id="themeBtn">Dark / Light Mode</button>
+</div>
+<div id="linkCountInfo"></div>
+<h1>Football Jersey Category Index‑Page 1</h1>
+<p>Listing page 1, items 1‑85.</p>
 
 <h2>Europe National Teams</h2>
 <ul>
-<li><a href="https://ovojersey.com/categories/austria-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Austria National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/germany-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Germany National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/spain-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Spain National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/france-national-football-team-jersey" target="_blank" rel="noopener noreferrer">France National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/netherlands-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Netherlands National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/portugal-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Portugal National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/belgium-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Belgium National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/czech-republic-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Czech Republic National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/turkiye-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Turkiye National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/denmark-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Denmark National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/norway-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Norway National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/scotland-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Scotland National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/switzerland-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Switzerland National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/poland-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Poland National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sweden-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Sweden National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/croatia-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Croatia National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/finland-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Finland National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/serbia-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Serbia National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ireland-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Ireland National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/albania-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Albania National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/wales-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Wales National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/italy-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Italy National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/england-national-football-team-jersey" target="_blank" rel="noopener noreferrer">England National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/austria‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Austria National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/germany‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Germany National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/spain‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Spain National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/france‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">France National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/netherlands‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Netherlands National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/portugal‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Portugal National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/belgium‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Belgium National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/czech‑republic‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Czech Republic National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/turkiye‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Turkiye National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/denmark‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Denmark National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/norway‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Norway National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/scotland‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Scotland National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/switzerland‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Switzerland National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/poland‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Poland National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/sweden‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Sweden National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/croatia‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Croatia National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/finland‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Finland National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/serbia‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Serbia National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/ireland‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Ireland National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/albania‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Albania National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/wales‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Wales National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/italy‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Italy National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/england‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">England National Football Team Jersey</a></li>
 </ul>
 
 <h2>South America National Teams</h2>
 <ul>
-<li><a href="https://ovojersey.com/categories/argentina-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Argentina National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/brazil-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Brazil National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/uruguay-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Uruguay National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/colombia-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Colombia National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/chile-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Chile National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ecuador-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Ecuador National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/venezuela-national-football-team-jersey" target="_blank" rel="noopener noreferrer">Venezuela National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/argentina‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Argentina National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/brazil‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Brazil National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/uruguay‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Uruguay National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/colombia‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Colombia National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/chile‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Chile National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/ecuador‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Ecuador National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/venezuela‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Venezuela National Football Team Jersey</a></li>
 </ul>
 
 <h2>North‑Central America & Caribbean National Teams</h2>
@@ -93,27 +103,24 @@ button:hover{background:#e9e9e9;}
 <li><a href="https://ovojersey.com/categories/burkina‑faso‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Burkina Faso National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/mali‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Mali National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/nigeria‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Nigeria National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/egypt‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Egypt National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/morocco‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Morocco National Football Team Jersey</a></li>
+<li><a href="https://ovojersey.com/categories/egypt‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Egypt National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/senegal‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Senegal National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/algeria‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Algeria National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/ghana‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Ghana National Football Team Jersey</a></li>
 </ul>
 
-<h2>Asia & Oceania National Teams</h2>
+<h2>Asia‑Oceania National Teams</h2>
 <ul>
 <li><a href="https://ovojersey.com/categories/japan‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Japan National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/south‑korea‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">South Korea National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/australia‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Australia National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/qatar‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Qatar National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/saudi‑arabia‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Saudi Arabia National Football Team Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/iran‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Iran National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/philippines‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Philippines National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/palestine‑national‑football‑team‑jersey" target="_blank" rel="noopener noreferrer">Palestine National Football Team Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/new‑zealand" target="_blank" rel="noopener noreferrer">New Zealand National Football Team Jersey</a></li>
 </ul>
 
-<h2>Premier League Clubs</h2>
+<h2>Premier League Clubs (partial)</h2>
 <ul>
 <li><a href="https://ovojersey.com/categories/manchester‑united‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Manchester United Football Club Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/liverpool‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Liverpool Football Club Jersey</a></li>
@@ -130,356 +137,85 @@ button:hover{background:#e9e9e9;}
 <li><a href="https://ovojersey.com/categories/crystal‑palace‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Crystal Palace Football Club Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/fulham‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Fulham Football Club Jersey</a></li>
 <li><a href="https://ovojersey.com/categories/brighton‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Brighton Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/brentford‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Brentford Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/wolverhampton‑wanderers‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Wolverhampton Wanderers Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/nottingham‑forest‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Nottingham Forest Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sheffield‑united‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Sheffield United Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/bournemouth‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Bournemouth Football Club Jersey</a></li>
 </ul>
 
-<h2>La Liga Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/real‑madrid‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Real Madrid Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑barcelona‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">FC Barcelona Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/atletico‑madrid‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Atletico Madrid Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sevilla‑fc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Sevilla FC Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/valencia‑cf‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Valencia CF Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/real‑betis‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Real Betis Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/athletic‑club‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Athletic Club Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/villarreal‑cf‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Villarreal CF Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/real‑sociedad‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Real Sociedad Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/celta‑vigo‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Celta Vigo Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/girona‑fc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Girona FC Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ud‑las‑palmas‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">UD Las Palmas Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ca‑osasuna‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">CA Osasuna Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/getafe‑cf‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Getafe CF Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/vallecano‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Vallecano Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/real‑mallorca‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Real Mallorca Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/alaves‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Alaves Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/levante‑ud‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Levante UD Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/elche‑cf‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Elche CF Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/real‑oviedo‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Real Oviedo Football Club Jersey</a></li>
-</ul>
+<div class="pagination">
+<span style="opacity:0.4;cursor:not‑allowed">‹ Prev</span>
+<span class="current">1</span>
+<a href="page2.html">2</a>
+<a href="page3.html">3</a>
+<a href="page4.html">4</a>
+<a href="page5.html">5</a>
+<a href="page6.html">6</a>
+<a href="page7.html">7</a>
+<a href="page8.html">8</a>
+<a href="page2.html">Next ›</a>
+</div>
 
-<h2>Bundesliga Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/bayern‑munich" target="_blank" rel="noopener noreferrer">Bayern Munich Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/borussia‑dortmund" target="_blank" rel="noopener noreferrer">Borussia Dortmund Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/bayer‑04‑leverkusen" target="_blank" rel="noopener noreferrer">Bayer 04 Leverkusen Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/rb‑leipzig" target="_blank" rel="noopener noreferrer">RB Leipzig Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/vfb‑stuttgart" target="_blank" rel="noopener noreferrer">VfB Stuttgart Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/eintracht‑frankfurt" target="_blank" rel="noopener noreferrer">Eintracht Frankfurt Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/1‑fc‑union‑berlin" target="_blank" rel="noopener noreferrer">1 FC Union Berlin Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sv‑werder‑bremen" target="_blank" rel="noopener noreferrer">SV Werder Bremen Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/borussia‑monchengladbach" target="_blank" rel="noopener noreferrer">Borussia Monchengladbach Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/vfl‑wolfsburg" target="_blank" rel="noopener noreferrer">VfL Wolfsburg Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sc‑freiburg" target="_blank" rel="noopener noreferrer">SC Freiburg Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/1‑fsv‑mainz‑05" target="_blank" rel="noopener noreferrer">1 FSV Mainz 05 Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑augsburg" target="_blank" rel="noopener noreferrer">FC Augsburg Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/tsg‑hoffenheim" target="_blank" rel="noopener noreferrer">TSG Hoffenheim Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/vfl‑bochum" target="_blank" rel="noopener noreferrer">VfL Bochum Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑heidenheim" target="_blank" rel="noopener noreferrer">FC Heidenheim Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/holstein‑kiel" target="_blank" rel="noopener noreferrer">Holstein Kiel Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/darmstadt‑98" target="_blank" rel="noopener noreferrer">Darmstadt 98 Jersey</a></li>
-</ul>
+<button class="back‑top" id="backTop">Back To Top</button>
+<script>
+let dark=localStorage.getItem('darkMode')==='1';
+function applyTheme(){
+  if(dark){
+    document.documentElement.setAttribute('data‑theme','dark');
+    document.querySelector('.theme‑btn').textContent='☀️ Light';
+    document.body.style.background="#181818";document.body.style.color="#eee";
+  }else{
+    document.documentElement.removeAttribute('data‑theme');
+    document.querySelector('.theme‑btn').textContent='🌙 Dark';
+    document.body.style.background="#ffffff";document.body.style.color="#222";
+  }
+}
+applyTheme();
+function toggleTheme(){dark=!dark;localStorage.setItem('darkMode',dark?'1':'0');applyTheme();}
 
-<h2>Serie A Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/juventus" target="_blank" rel="noopener noreferrer">Juventus Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/inter‑milan" target="_blank" rel="noopener noreferrer">Inter Milan Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ac‑milan" target="_blank" rel="noopener noreferrer">AC Milan Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/as‑roma" target="_blank" rel="noopener noreferrer">AS Roma Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/naples" target="_blank" rel="noopener noreferrer">Napoli Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/lazio" target="_blank" rel="noopener noreferrer">Lazio Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fiorentina" target="_blank" rel="noopener noreferrer">Fiorentina Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/torino" target="_blank" rel="noopener noreferrer">Torino Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/bologna‑fc" target="_blank" rel="noopener noreferrer">Bologna FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/parma" target="_blank" rel="noopener noreferrer">Parma Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/genoa" target="_blank" rel="noopener noreferrer">Genoa Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/udinese" target="_blank" rel="noopener noreferrer">Udinese Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/hellas‑verona" target="_blank" rel="noopener noreferrer">Hellas Verona Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sassuolo" target="_blank" rel="noopener noreferrer">Sassuolo Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cagliari‑calcio" target="_blank" rel="noopener noreferrer">Cagliari Calcio Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/monza" target="_blank" rel="noopener noreferrer">Monza Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/lecce" target="_blank" rel="noopener noreferrer">Lecce Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/empoli" target="_blank" rel="noopener noreferrer">Empoli Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/pisa" target="_blank" rel="noopener noreferrer">Pisa Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/como" target="_blank" rel="noopener noreferrer">Como Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cremonese" target="_blank" rel="noopener noreferrer">Cremonese Jersey</a></li>
-</ul>
+const searchInput=document.getElementById('searchInput');
+const listItems=document.querySelectorAll('ul li');
+const linkCountInfo=document.getElementById('linkCountInfo');
+listItems.forEach(li=>{li._aText=li.querySelector('a').textContent;});
+linkCountInfo.innerText=`Total links on current page: ${listItems.length}`;
 
-<h2>Ligue 1 Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/paris‑saint‑germain‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Paris Saint‑Germain Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/olympique‑de‑marseille‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Olympique de Marseille Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/olympique‑lyonnais‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Olympique Lyonnais Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/as‑monaco‑fc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">AS Monaco FC Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/losc‑lille‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">LOSC Lille Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/stade‑rennais‑fc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Stade Rennais FC Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ogc‑nice‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">OGC Nice Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/rc‑lens‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">RC Lens Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑nantes‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">FC Nantes Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/rc‑strasbourg‑alsace‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">RC Strasbourg Alsace Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/montpellier‑hsc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Montpellier HSC Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/toulouse‑fc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Toulouse FC Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/as‑saint‑etienne‑football‑club‑jersey‑5iGLiSOa" target="_blank" rel="noopener noreferrer">AS Saint‑Etienne Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/stade‑brestois‑29‑football‑club‑jersey‑P7ZNzp65" target="_blank" rel="noopener noreferrer">Stade Brestois 29 Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/stade‑de‑reims‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Stade de Reims Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/aj‑auxerre‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">AJ Auxerre Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/havre‑ac‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Havre AC Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑lorient‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">FC Lorient Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑metz‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">FC Metz Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/angers‑sco‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Angers SCO Football Club Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/paris‑fc‑football‑club‑jersey" target="_blank" rel="noopener noreferrer">Paris FC Football Club Jersey</a></li>
-</ul>
+document.addEventListener('keydown',function(e){
+  if(e.altKey&&e.key.toLowerCase()==='s'){e.preventDefault();searchInput.focus();}
+  if(e.key==='Escape'){searchInput.value='';searchInput.dispatchEvent(new Event('input'));}
+})
 
-<h2>Eredivisie Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/ajax" target="_blank" rel="noopener noreferrer">Ajax Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/psv‑eindhoven" target="_blank" rel="noopener noreferrer">PSV Eindhoven Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/feyenoord" target="_blank" rel="noopener noreferrer">Feyenoord Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/az‑alkmaar" target="_blank" rel="noopener noreferrer">AZ Alkmaar Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑twente" target="_blank" rel="noopener noreferrer">FC Twente Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sparta‑rotterdam" target="_blank" rel="noopener noreferrer">Sparta Rotterdam Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/n‑e‑c‑nijmegen" target="_blank" rel="noopener noreferrer">NEC Nijmegen Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑utrecht" target="_blank" rel="noopener noreferrer">FC Utrecht Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sc‑heerenveen" target="_blank" rel="noopener noreferrer">SC Heerenveen Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/go‑ahead‑eagles" target="_blank" rel="noopener noreferrer">Go Ahead Eagles Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fortuna‑sittard" target="_blank" rel="noopener noreferrer">Fortuna Sittard Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑groningen" target="_blank" rel="noopener noreferrer">FC Groningen Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sc‑telstar" target="_blank" rel="noopener noreferrer">SC Telstar Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/almere‑city‑fc" target="_blank" rel="noopener noreferrer">Almere City FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/excelsior‑rotterdam" target="_blank" rel="noopener noreferrer">Excelsior Rotterdam Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/nac‑breda" target="_blank" rel="noopener noreferrer">NAC Breda Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sbv‑vitesse" target="_blank" rel="noopener noreferrer">SBV Vitesse Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/pec‑zwolle" target="_blank" rel="noopener noreferrer">PEC Zwolle Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/rkc‑waalwijk" target="_blank" rel="noopener noreferrer">RKC Waalwijk Jersey</a></li>
-</ul>
+searchInput.addEventListener('input',function(){
+  const kw=this.value.toLowerCase().trim();
+  listItems.forEach(li=>{
+    const txt=li._aText.toLowerCase();
+    const aDom=li.querySelector('a');
+    if(!kw){li.style.display='';aDom.innerHTML=li._aText;return;}
+    if(txt.includes(kw)){
+      li.style.display='';
+      const reg=new RegExp(`(${kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi');
+      aDom.innerHTML=li._aText.replace(reg,'<mark>$1</mark>');
+    }else{li.style.display='none';}
+  })
+});
 
-<h2>Brazilian Serie‑A Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/botafogo" target="_blank" rel="noopener noreferrer">Botafogo Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sc‑corinthians‑paulista" target="_blank" rel="noopener noreferrer">SC Corinthians Paulista Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cruzeiro‑esporte‑clube" target="_blank" rel="noopener noreferrer">Cruzeiro Esporte Clube Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/flamengo" target="_blank" rel="noopener noreferrer">Flamengo Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/palmeiras" target="_blank" rel="noopener noreferrer">Palmeiras Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/santos" target="_blank" rel="noopener noreferrer">Santos Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sao‑paulo" target="_blank" rel="noopener noreferrer">Sao Paulo Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sport‑recife" target="_blank" rel="noopener noreferrer">Sport Recife Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/vasco" target="_blank" rel="noopener noreferrer">Vasco Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/gremio" target="_blank" rel="noopener noreferrer">Gremio Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/internacional" target="_blank" rel="noopener noreferrer">Internacional Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/juventude" target="_blank" rel="noopener noreferrer">Juventude Jersey</a></li>
-</ul>
+let listOpen=true;
+document.getElementById('toggleAllBtn').addEventListener('click',()=>{
+  const uls=document.querySelectorAll('ul');
+  listOpen=!listOpen;
+  uls.forEach(u=>u.style.display=listOpen?'':'none');
+})
 
-<h2>Argentina Superliga</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/superliga‑argentina" target="_blank" rel="noopener noreferrer">Superliga Argentina League Index</a></li>
-<li><a href="https://ovojersey.com/categories/boca‑juniors" target="_blank" rel="noopener noreferrer">Boca Juniors Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/river‑plate" target="_blank" rel="noopener noreferrer">River Plate Jersey</a></li>
-</ul>
+document.getElementById('copyLinksBtn').addEventListener('click',async ()=>{
+  const links=Array.from(document.querySelectorAll('ul li a')).map(a=>a.href).join('\n');
+  try{await navigator.clipboard.writeText(links);alert(`Copied ${links.split('\n').length} urls!`);}
+  catch(e){alert("Copy failed, manually select text.");}
+})
 
-<h2>Belgian Pro League Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/belgian‑pro‑league" target="_blank" rel="noopener noreferrer">Belgian Pro League Index</a></li>
-<li><a href="https://ovojersey.com/categories/beerschot" target="_blank" rel="noopener noreferrer">Beerschot Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cercle‑brugge" target="_blank" rel="noopener noreferrer">Cercle Brugge Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/krc‑genk" target="_blank" rel="noopener noreferrer">KRC Genk Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/r‑s‑c‑anderlecht" target="_blank" rel="noopener noreferrer">RSC Anderlecht Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/royal‑antwerp" target="_blank" rel="noopener noreferrer">Royal Antwerp Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/royal‑charleroi‑sc" target="_blank" rel="noopener noreferrer">Royal Charleroi SC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/union‑sg" target="_blank" rel="noopener noreferrer">Union SG Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/standard‑liege" target="_blank" rel="noopener noreferrer">Standard Liege Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sint‑truiden‑vv" target="_blank" rel="noopener noreferrer">Sint‑Truiden VV Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/zulte‑waregem" target="_blank" rel="noopener noreferrer">Zulte‑Waregem Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/club‑brugge" target="_blank" rel="noopener noreferrer">Club Brugge Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/kaa‑gent" target="_blank" rel="noopener noreferrer">KAA Gent Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/kv‑kortrijk" target="_blank" rel="noopener noreferrer">KV Kortrijk Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/kvc‑westerlo" target="_blank" rel="noopener noreferrer">KVC Westerlo Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/oh‑leuven" target="_blank" rel="noopener noreferrer">OH Leuven Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fcv‑dender‑eh" target="_blank" rel="noopener noreferrer">FCV Dender EH Jersey</a></li>
-</ul>
+document.getElementById('copyTextBtn').addEventListener('click',async ()=>{
+  const names=Array.from(document.querySelectorAll('ul li a')).map(a=>a.textContent).join('\n');
+  try{await navigator.clipboard.writeText(names);alert(`Copied ${names.split('\n').length} team names!`);}
+  catch(e){alert("Copy failed, manually select text.");}
+})
 
-<h2>EFL Championship Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/efl‑championship" target="_blank" rel="noopener noreferrer">EFL Championship League Index</a></li>
-<li><a href="https://ovojersey.com/categories/birmingham‑city" target="_blank" rel="noopener noreferrer">Birmingham City Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/blackburn‑rovers" target="_blank" rel="noopener noreferrer">Blackburn Rovers Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/bristol‑city" target="_blank" rel="noopener noreferrer">Bristol City Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/burnley" target="_blank" rel="noopener noreferrer">Burnley Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cardiff‑city" target="_blank" rel="noopener noreferrer">Cardiff City Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/charlton‑athletic" target="_blank" rel="noopener noreferrer">Charlton Athletic Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/coventry‑city" target="_blank" rel="noopener noreferrer">Coventry City Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/derby‑county" target="_blank" rel="noopener noreferrer">Derby County Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/hull‑city" target="_blank" rel="noopener noreferrer">Hull City Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ipswich‑town" target="_blank" rel="noopener noreferrer">Ipswich Town Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/leeds‑united‑football‑club‑jerseys" target="_blank" rel="noopener noreferrer">Leeds United Jerseys</a></li>
-<li><a href="https://ovojersey.com/categories/leicester‑city" target="_blank" rel="noopener noreferrer">Leicester City Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/middlesbrough" target="_blank" rel="noopener noreferrer">Middlesbrough Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/millwall" target="_blank" rel="noopener noreferrer">Millwall Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/norwich‑city" target="_blank" rel="noopener noreferrer">Norwich City Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/oxford‑united" target="_blank" rel="noopener noreferrer">Oxford United Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/portsmouth" target="_blank" rel="noopener noreferrer">Portsmouth Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/preston‑north‑end" target="_blank" rel="noopener noreferrer">Preston North End Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/qpr" target="_blank" rel="noopener noreferrer">QPR Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sheffield‑united‑jersey" target="_blank" rel="noopener noreferrer">Sheffield United Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sheffield‑wednesday" target="_blank" rel="noopener noreferrer">Sheffield Wednesday Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/swansea‑city" target="_blank" rel="noopener noreferrer">Swansea City Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/west‑bromwich‑albion" target="_blank" rel="noopener noreferrer">West Bromwich Albion Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/wrexham‑afc" target="_blank" rel="noopener noreferrer">Wrexham AFC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/luton‑town" target="_blank" rel="noopener noreferrer">Luton Town Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/plymouth‑argyle" target="_blank" rel="noopener noreferrer">Plymouth Argyle Jersey</a></li>
-</ul>
-
-<h2>2‑Bundesliga Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/2‑bundesliga" target="_blank" rel="noopener noreferrer">2‑Bundesliga League Index</a></li>
-<li><a href="https://ovojersey.com/categories/1‑fc‑koln" target="_blank" rel="noopener noreferrer">1 FC Köln Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑st‑pauli‑jersey" target="_blank" rel="noopener noreferrer">FC St Pauli Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/1‑fc‑heidenheim‑1846" target="_blank" rel="noopener noreferrer">1 FC Heidenheim 1846 Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/hamburger‑sv‑jersey" target="_blank" rel="noopener noreferrer">Hamburger SV Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fortuna‑dusseldorf" target="_blank" rel="noopener noreferrer">Fortuna Dusseldorf Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑schalke‑04" target="_blank" rel="noopener noreferrer">FC Schalke 04 Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/hertha‑bsc" target="_blank" rel="noopener noreferrer">Hertha BSC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/hannover‑96" target="_blank" rel="noopener noreferrer">Hannover 96 Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/1‑fc‑nurnberg" target="_blank" rel="noopener noreferrer">1 FC Nürnberg Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/karlsruher‑sc" target="_blank" rel="noopener noreferrer">Karlsruher SC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/spvgg‑greuther‑furth" target="_blank" rel="noopener noreferrer">SpVgg Greuther Fürth Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sv‑elversberg" target="_blank" rel="noopener noreferrer">SV Elversberg Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/1‑fc‑magdeburg" target="_blank" rel="noopener noreferrer">1 FC Magdeburg Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/vfl‑bochum‑1848" target="_blank" rel="noopener noreferrer">VfL Bochum 1848 Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/dynamo‑dresden" target="_blank" rel="noopener noreferrer">Dynamo Dresden Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/arminia‑bielefeld" target="_blank" rel="noopener noreferrer">Arminia Bielefeld Jersey</a></li>
-</ul>
-
-<h2>Primeira Liga Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/primeira‑liga" target="_blank" rel="noopener noreferrer">Primeira Liga League Index</a></li>
-<li><a href="https://ovojersey.com/categories/avs‑football‑sad" target="_blank" rel="noopener noreferrer">AVS Football SAD Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cd‑tondela" target="_blank" rel="noopener noreferrer">CD Tondela Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/casa‑pia‑ac" target="_blank" rel="noopener noreferrer">Casa Pia AC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/benfica" target="_blank" rel="noopener noreferrer">Benfica Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/porto" target="_blank" rel="noopener noreferrer">Porto Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sporting‑cp" target="_blank" rel="noopener noreferrer">Sporting CP Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/rio‑ave‑fc‑jersey" target="_blank" rel="noopener noreferrer">Rio Ave FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/santa‑clara‑jersey" target="_blank" rel="noopener noreferrer">Santa Clara Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sc‑braga‑jersey" target="_blank" rel="noopener noreferrer">SC Braga Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/sc‑farense" target="_blank" rel="noopener noreferrer">SC Farense Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/estoril‑praia" target="_blank" rel="noopener noreferrer">Estoril Praia Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/estrela‑amadora" target="_blank" rel="noopener noreferrer">Estrela Amadora Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑alverca" target="_blank" rel="noopener noreferrer">FC Alverca Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑arouca" target="_blank" rel="noopener noreferrer">FC Arouca Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/gil‑vicente‑fc" target="_blank" rel="noopener noreferrer">Gil Vicente FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/moreirense‑fc" target="_blank" rel="noopener noreferrer">Moreirense FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cd‑nacional" target="_blank" rel="noopener noreferrer">CD Nacional Jersey</a></li>
-</ul>
-
-<h2>Liga MX Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/liga‑mx" target="_blank" rel="noopener noreferrer">Liga MX League Index</a></li>
-<li><a href="https://ovojersey.com/categories/club‑puebla" target="_blank" rel="noopener noreferrer">Club Puebla Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/necaxa" target="_blank" rel="noopener noreferrer">Necaxa Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/pumas‑unam‑jersey" target="_blank" rel="noopener noreferrer">Pumas UNAM Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/toluca‑fc" target="_blank" rel="noopener noreferrer">Toluca FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/club‑leon‑fc" target="_blank" rel="noopener noreferrer">Club Leon FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/club‑tijuana‑xolos" target="_blank" rel="noopener noreferrer">Club Tijuana Xolos Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/seattle‑sounders" target="_blank" rel="noopener noreferrer">Seattle Sounders Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/club‑atlas" target="_blank" rel="noopener noreferrer">Club Atlas Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/club‑de‑futbol‑pachuca" target="_blank" rel="noopener noreferrer">Club de Futbol Pachuca Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/chivas‑guadalajara‑cd" target="_blank" rel="noopener noreferrer">Chivas Guadalajara CD Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cruz‑azul‑jersey" target="_blank" rel="noopener noreferrer">Cruz Azul Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cf‑monterrey" target="_blank" rel="noopener noreferrer">CF Monterrey Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/santos‑laguna" target="_blank" rel="noopener noreferrer">Santos Laguna Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/tigres‑uanl‑jersey" target="_blank" rel="noopener noreferrer">Tigres UANL Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/club‑america" target="_blank" rel="noopener noreferrer">Club America Jersey</a></li>
-</ul>
-
-<h2>Swiss Super League Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/swiss‑super‑league" target="_blank" rel="noopener noreferrer">Swiss Super League League Index</a></li>
-<li><a href="https://ovojersey.com/categories/bsc‑young‑boys" target="_blank" rel="noopener noreferrer">BSC Young Boys Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑bale‑1893" target="_blank" rel="noopener noreferrer">FC Bale 1893 Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑zurich" target="_blank" rel="noopener noreferrer">FC Zurich Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/grasshopper‑club‑zurich" target="_blank" rel="noopener noreferrer">Grasshopper Club Zurich Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/servette‑fc" target="_blank" rel="noopener noreferrer">Servette FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑st‑gallen‑1879" target="_blank" rel="noopener noreferrer">FC St Gallen 1879 Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑sion" target="_blank" rel="noopener noreferrer">FC Sion Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑luzern" target="_blank" rel="noopener noreferrer">FC Luzern Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑lugano" target="_blank" rel="noopener noreferrer">FC Lugano Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑lausanne‑sport" target="_blank" rel="noopener noreferrer">FC Lausanne Sport Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑winterthur" target="_blank" rel="noopener noreferrer">FC Winterthur Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/yverdon‑sport‑fc" target="_blank" rel="noopener noreferrer">Yverdon Sport FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑thun" target="_blank" rel="noopener noreferrer">FC Thun Jersey</a></li>
-</ul>
-
-<h2>Allsvenskan Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/allsvenskan" target="_blank" rel="noopener noreferrer">Allsvenskan League Index</a></li>
-<li><a href="https://ovojersey.com/categories/aik" target="_blank" rel="noopener noreferrer">AIK Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/degerfors‑if" target="_blank" rel="noopener noreferrer">Degerfors IF Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/gais" target="_blank" rel="noopener noreferrer">GAIS Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/halmstads‑bk" target="_blank" rel="noopener noreferrer">Halmstads BK Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/hammarby‑if" target="_blank" rel="noopener noreferrer">Hammarby IF Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/if‑elfsborg" target="_blank" rel="noopener noreferrer">IF Elfsborg Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ik‑sirius" target="_blank" rel="noopener noreferrer">IK Sirius Jersey</a></li>
-</ul>
-
-<h2>Canadian Premier League</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/canadian‑pcremier‑lpeague" target="_blank" rel="noopener noreferrer">Canadian Premier League Index</a></li>
-<li><a href="https://ovojersey.com/categories/vancouver‑fc" target="_blank" rel="noopener noreferrer">Vancouver FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/forge‑fc" target="_blank" rel="noopener noreferrer">Forge FC Jersey</a></li>
-</ul>
-
-<h2>Danish Superliga Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/danish‑superliga" target="_blank" rel="noopener noreferrer">Danish Superliga League Index</a></li>
-<li><a href="https://ovojersey.com/categories/aab‑fodbold" target="_blank" rel="noopener noreferrer">AAB Fodbold Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑copenhagen" target="_blank" rel="noopener noreferrer">FC Copenhagen Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑midtjylland" target="_blank" rel="noopener noreferrer">FC Midtjylland Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/randers‑fc" target="_blank" rel="noopener noreferrer">Randers FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/viborg‑ff" target="_blank" rel="noopener noreferrer">Viborg FF Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/vejle‑bk" target="_blank" rel="noopener noreferrer">Vejle BK Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/silkeborg‑if" target="_blank" rel="noopener noreferrer">Silkeborg IF Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/fc‑fredericia" target="_blank" rel="noopener noreferrer">FC Fredericia Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/lyngby‑bk" target="_blank" rel="noopener noreferrer">Lyngby BK Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/odense‑boldklub" target="_blank" rel="noopener noreferrer">Odense Boldklub Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/agf‑aarhus" target="_blank" rel="noopener noreferrer">AGF Aarhus Jersey</a></li>
-</ul>
-
-<h2>Greek Super League Clubs</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/greek‑super‑league" target="_blank" rel="noopener noreferrer">Greek Super League League Index</a></li>
-<li><a href="https://ovojersey.com/categories/aek‑athens" target="_blank" rel="noopener noreferrer">AEK Athens Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ael‑larissa" target="_blank" rel="noopener noreferrer">AEL Larissa Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/aris‑fc" target="_blank" rel="noopener noreferrer">Aris FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/asteras‑aktor" target="_blank" rel="noopener noreferrer">Asteras Aktor Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/atromitos‑fc" target="_blank" rel="noopener noreferrer">Atromitos FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/paok‑fc" target="_blank" rel="noopener noreferrer">PAOK FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/athens‑kallithea‑fc" target="_blank" rel="noopener noreferrer">Athens Kallithea FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/olympiacos‑fc" target="_blank" rel="noopener noreferrer">Olympiacos FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/panathinaikos‑fc" target="_blank" rel="noopener noreferrer">Panathinaikos FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/volos‑fc" target="_blank" rel="noopener noreferrer">Volos FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/kifisia‑fc" target="_blank" rel="noopener noreferrer">Kifisia FC Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/levadiakos" target="_blank" rel="noopener noreferrer">Levadiakos Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/ofi‑crete" target="_blank" rel="noopener noreferrer">OFI Crete Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/panetolikos" target="_blank" rel="noopener noreferrer">Panetolikos Jersey</a></li>
-</ul>
-
-<h2>Scottish Premiership</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/scottish‑premiership‑jersey" target="_blank" rel="noopener noreferrer">Scottish Premiership League Index</a></li>
-<li><a href="https://ovojersey.com/categories/celtic" target="_blank" rel="noopener noreferrer">Celtic Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/rangers" target="_blank" rel="noopener noreferrer">Rangers Jersey</a></li>
-</ul>
-
-<h2>Ekstraklasa (Poland)</h2>
-<ul>
-<li><a href="https://ovojersey.com/categories/ekstraklasa" target="_blank" rel="noopener noreferrer">Ekstraklasa League Index</a></li>
-<li><a href="https://ovojersey.com/categories/arka‑gdynia" target="_blank" rel="noopener noreferrer">Arka Gdynia Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/bruk‑bet‑termalica" target="_blank" rel="noopener noreferrer">Bruk‑Bet Termalica Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/cracovia" target="_blank" rel="noopener noreferrer">Cracovia Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/legia‑warszawa" target="_blank" rel="noopener noreferrer">Legia Warszawa Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/piast‑gliwice" target="_blank" rel="noopener noreferrer">Piast Gliwice Jersey</a></li>
-<li><a href="https://ovojersey.com/categories/radomiak‑radom" target="_blank" rel="noopener noreferrer">Radomiak Radom Jersey</a></li>
-<li><a href="https://ovojersey.com/c
+const bt=document.getElementById('backTop');
+window.addEventListener('scroll',()=>{bt.style.display=window.scrollY>400?'block':'none';})
+bt.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+</script>
+</body>
+</html>
