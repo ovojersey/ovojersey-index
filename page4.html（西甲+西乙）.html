@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Liga & Segunda Division - Ovojersey Category Index</title>
+<style>
+:root{--bg:#f8f9fa;--card:#fff;--text:#1a202c;--text2:#4a5568;--border:#e2e8f0;--accent:#0058cc;--accent-light:#ebf4ff;}
+[data-theme="dark"]{--bg:#1a1a1a;--card:#242424;--text:#e2e8f0;--text2:#a0aec0;--border:#2d3748;--accent:#63b3ed;--accent-light:#1a365d;}
+*{box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);max-width:1300px;margin:0 auto;padding:24px 20px;line-height:1.6;}
+h1{font-size:26px;margin:0 0 8px;}
+.subtitle{color:var(--text2);margin-bottom:24px;font-size:15px;}
+h2{font-size:19px;margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+.breadcrumb{font-size:13px;color:var(--text2);margin-bottom:16px;}
+.breadcrumb a{color:var(--accent);text-decoration:none;}
+.breadcrumb a:hover{text-decoration:underline;}
+.search-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px;}
+.search-bar input{flex:1;min-width:260px;padding:10px 14px;font-size:15px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);}
+.search-bar input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light);}
+.search-bar button{padding:9px 14px;font-size:13px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);cursor:pointer;transition:all .15s;}
+.search-bar button:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
+.result-count{font-size:13px;color:var(--text2);margin-bottom:14px;}
+.link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;}
+.link-item{display:block;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:var(--card);text-decoration:none;color:var(--text);font-size:14px;transition:all .15s;}
+.link-item:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);transform:translateX(3px);}
+.link-item mark{background:#fffd88;padding:0 2px;border-radius:2px;}
+[data-theme="dark"] .link-item mark{background:#6b5a00;color:#fff;}
+.pager{display:flex;align-items:center;justify-content:center;gap:6px;margin:32px 0 16px;flex-wrap:wrap;}
+.pager a,.pager span{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;padding:0 10px;border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:14px;background:var(--card);transition:all .15s;}
+.pager a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
+.pager .current{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600;}
+.pager .arrow{font-size:16px;font-weight:bold;}
+.theme-btn{position:fixed;top:16px;right:16px;padding:8px 14px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);cursor:pointer;font-size:13px;z-index:100;}
+.theme-btn:hover{border-color:var(--accent);}
+.back-top{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;font-size:18px;display:none;align-items:center;justify-content:center;z-index:100;}
+</style>
+</head>
+<body>
+<button class="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
+<div class="breadcrumb"><a href="index.html">Home</a> / Category Index / Page 4</div>
+<h1>La Liga & Segunda Division</h1>
+<p class="subtitle">Browse 37+ club & national team category links. Click any link to view products on Ovojersey.</p>
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search team or category... (Alt+S to focus, Esc to clear)">
+  <button onclick="window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'})">↓ Bottom</button>
+</div>
+<div class="result-count" id="resultCount"></div>
+<h2>La Liga Clubs</h2><div class="link-grid"><a href="https://ovojersey.com/categories/real-madrid-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Real Madrid Football Club Jersey</a><a href="https://ovojersey.com/categories/fc-barcelona-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">FC Barcelona Football Club Jersey</a><a href="https://ovojersey.com/categories/atletico-madrid-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Atletico Madrid Football Club Jersey</a><a href="https://ovojersey.com/categories/sevilla-fc-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Sevilla FC Football Club Jersey</a><a href="https://ovojersey.com/categories/valencia-cf-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Valencia CF Football Club Jersey</a><a href="https://ovojersey.com/categories/real-betis-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Real Betis Football Club Jersey</a><a href="https://ovojersey.com/categories/athletic-club-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Athletic Club Football Club Jersey</a><a href="https://ovojersey.com/categories/villarreal-cf-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Villarreal CF Football Club Jersey</a><a href="https://ovojersey.com/categories/real-sociedad-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Real Sociedad Football Club Jersey</a><a href="https://ovojersey.com/categories/celta-vigo-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Celta Vigo Football Club Jersey</a><a href="https://ovojersey.com/categories/girona-fc-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Girona FC Football Club Jersey</a><a href="https://ovojersey.com/categories/ud-las-palmas-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">UD Las Palmas Football Club Jersey</a><a href="https://ovojersey.com/categories/ca-osasuna-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">CA Osasuna Football Club Jersey</a><a href="https://ovojersey.com/categories/getafe-cf-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Getafe CF Football Club Jersey</a><a href="https://ovojersey.com/categories/vallecano-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Vallecano Football Club Jersey</a><a href="https://ovojersey.com/categories/real-mallorca-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Real Mallorca Football Club Jersey</a><a href="https://ovojersey.com/categories/alaves-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Alaves Football Club Jersey</a><a href="https://ovojersey.com/categories/levante-ud-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Levante UD Football Club Jersey</a><a href="https://ovojersey.com/categories/elche-cf-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Elche CF Football Club Jersey</a><a href="https://ovojersey.com/categories/real-oviedo-football-club-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Real Oviedo Football Club Jersey</a></div><h2>La Liga Hypermotion (Segunda Division)</h2><div class="link-grid"><a href="https://ovojersey.com/categories/real-zaragoza" target="_blank" rel="noopener noreferrer" class="link-item">Real Zaragoza Jersey</a><a href="https://ovojersey.com/categories/fc-andorra" target="_blank" rel="noopener noreferrer" class="link-item">FC Andorra Jersey</a><a href="https://ovojersey.com/categories/fc-cartagena" target="_blank" rel="noopener noreferrer" class="link-item">FC Cartagena Jersey</a><a href="https://ovojersey.com/categories/granada-cf" target="_blank" rel="noopener noreferrer" class="link-item">Granada CF Jersey</a><a href="https://ovojersey.com/categories/racing-club-de-ferrol" target="_blank" rel="noopener noreferrer" class="link-item">Racing Club de Ferrol Jersey</a><a href="https://ovojersey.com/categories/real-sociedad-b" target="_blank" rel="noopener noreferrer" class="link-item">Real Sociedad B Jersey</a><a href="https://ovojersey.com/categories/real-sporting-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Real Sporting Jersey</a><a href="https://ovojersey.com/categories/real-valladolid-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Real Valladolid Jersey</a><a href="https://ovojersey.com/categories/sd-eibar-jersey" target="_blank" rel="noopener noreferrer" class="link-item">SD Eibar Jersey</a><a href="https://ovojersey.com/categories/sd-huesca-jersey" target="_blank" rel="noopener noreferrer" class="link-item">SD Huesca Jersey</a><a href="https://ovojersey.com/categories/ad-ceuta-fc" target="_blank" rel="noopener noreferrer" class="link-item">AD Ceuta FC Jersey</a><a href="https://ovojersey.com/categories/albacete-bp" target="_blank" rel="noopener noreferrer" class="link-item">Albacete BP Jersey</a><a href="https://ovojersey.com/categories/burgos-cf" target="_blank" rel="noopener noreferrer" class="link-item">Burgos CF Jersey</a><a href="https://ovojersey.com/categories/cd-eldense" target="_blank" rel="noopener noreferrer" class="link-item">CD Eldense Jersey</a><a href="https://ovojersey.com/categories/cd-leganes" target="_blank" rel="noopener noreferrer" class="link-item">CD Leganes Jersey</a><a href="https://ovojersey.com/categories/cd-tenerife" target="_blank" rel="noopener noreferrer" class="link-item">CD Tenerife Jersey</a><a href="https://ovojersey.com/categories/cultural-leonesa" target="_blank" rel="noopener noreferrer" class="link-item">Cultural Leonesa Jersey</a></div>
+<div class="pager"><a href="page3.html" class="arrow">‹</a><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><span class="current">4</span><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page5.html" class="arrow">›</a></div>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+let dark=localStorage.getItem('darkMode')==='1';
+function applyTheme(){
+  if(dark){document.documentElement.setAttribute('data-theme','dark');document.querySelector('.theme-btn').textContent='☀️ Light';}
+  else{document.documentElement.removeAttribute('data-theme');document.querySelector('.theme-btn').textContent='🌙 Dark';}
+}
+applyTheme();
+function toggleTheme(){dark=!dark;localStorage.setItem('darkMode',dark?'1':'0');applyTheme();}
+
+const searchInput=document.getElementById('searchInput');
+const linkItems=document.querySelectorAll('.link-item');
+const resultCount=document.getElementById('resultCount');
+linkItems.forEach(li=>{li._text=li.textContent;});
+function updateCount(){
+  const visible=Array.from(linkItems).filter(li=>li.style.display!=='none').length;
+  resultCount.textContent='Showing '+visible+' of '+linkItems.length+' links';
+}
+updateCount();
+
+function doSearch(){
+  const kw=searchInput.value.toLowerCase().trim();
+  linkItems.forEach(li=>{
+    const txt=li._text.toLowerCase();
+    if(!kw){li.style.display='';li.innerHTML=li._text;return;}
+    if(txt.includes(kw)){
+      li.style.display='';
+      const reg=new RegExp('('+kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+      li.innerHTML=li._text.replace(reg,'<mark>$1</mark>');
+    }else{li.style.display='none';}
+  });
+  updateCount();
+}
+searchInput.addEventListener('input',doSearch);
+searchInput.addEventListener('keyup',doSearch);
+document.addEventListener('keydown',function(e){
+  if(e.altKey&&e.key.toLowerCase()==='s'){e.preventDefault();searchInput.focus();}
+  if(e.key==='Escape'){searchInput.value='';doSearch();}
+});
+
+const bt=document.getElementById('backTop');
+window.addEventListener('scroll',function(){bt.style.display=window.scrollY>400?'flex':'none';});
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiss, Nordic, Scottish & Other Leagues - Ovojersey Category Index</title>
+<style>
+:root{--bg:#f8f9fa;--card:#fff;--text:#1a202c;--text2:#4a5568;--border:#e2e8f0;--accent:#0058cc;--accent-light:#ebf4ff;}
+[data-theme="dark"]{--bg:#1a1a1a;--card:#242424;--text:#e2e8f0;--text2:#a0aec0;--border:#2d3748;--accent:#63b3ed;--accent-light:#1a365d;}
+*{box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);max-width:1300px;margin:0 auto;padding:24px 20px;line-height:1.6;}
+h1{font-size:26px;margin:0 0 8px;}
+.subtitle{color:var(--text2);margin-bottom:24px;font-size:15px;}
+h2{font-size:19px;margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+.breadcrumb{font-size:13px;color:var(--text2);margin-bottom:16px;}
+.breadcrumb a{color:var(--accent);text-decoration:none;}
+.breadcrumb a:hover{text-decoration:underline;}
+.search-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px;}
+.search-bar input{flex:1;min-width:260px;padding:10px 14px;font-size:15px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);}
+.search-bar input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light);}
+.search-bar button{padding:9px 14px;font-size:13px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);cursor:pointer;transition:all .15s;}
+.search-bar button:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
+.result-count{font-size:13px;color:var(--text2);margin-bottom:14px;}
+.link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;}
+.link-item{display:block;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:var(--card);text-decoration:none;color:var(--text);font-size:14px;transition:all .15s;}
+.link-item:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);transform:translateX(3px);}
+.link-item mark{background:#fffd88;padding:0 2px;border-radius:2px;}
+[data-theme="dark"] .link-item mark{background:#6b5a00;color:#fff;}
+.pager{display:flex;align-items:center;justify-content:center;gap:6px;margin:32px 0 16px;flex-wrap:wrap;}
+.pager a,.pager span{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;padding:0 10px;border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:14px;background:var(--card);transition:all .15s;}
+.pager a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light);}
+.pager .current{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600;}
+.pager .arrow{font-size:16px;font-weight:bold;}
+.theme-btn{position:fixed;top:16px;right:16px;padding:8px 14px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);cursor:pointer;font-size:13px;z-index:100;}
+.theme-btn:hover{border-color:var(--accent);}
+.back-top{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;font-size:18px;display:none;align-items:center;justify-content:center;z-index:100;}
+</style>
+</head>
+<body>
+<button class="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
+<div class="breadcrumb"><a href="index.html">Home</a> / Category Index / Page 9</div>
+<h1>Swiss, Nordic, Scottish & Other Leagues</h1>
+<p class="subtitle">Browse 55+ club & national team category links. Click any link to view products on Ovojersey.</p>
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search team or category... (Alt+S to focus, Esc to clear)">
+  <button onclick="window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'})">↓ Bottom</button>
+</div>
+<div class="result-count" id="resultCount"></div>
+<h2>Swiss Super League</h2><div class="link-grid"><a href="https://ovojersey.com/categories/bsc-young-boys" target="_blank" rel="noopener noreferrer" class="link-item">BSC Young Boys Jersey</a><a href="https://ovojersey.com/categories/fc-bale-1893" target="_blank" rel="noopener noreferrer" class="link-item">FC Bale 1893 Jersey</a><a href="https://ovojersey.com/categories/fc-zurich" target="_blank" rel="noopener noreferrer" class="link-item">FC Zurich Jersey</a><a href="https://ovojersey.com/categories/grasshopper-club-zurich" target="_blank" rel="noopener noreferrer" class="link-item">Grasshopper Club Zurich Jersey</a><a href="https://ovojersey.com/categories/servette-fc" target="_blank" rel="noopener noreferrer" class="link-item">Servette FC Jersey</a><a href="https://ovojersey.com/categories/fc-st-gallen-1879" target="_blank" rel="noopener noreferrer" class="link-item">FC St Gallen 1879 Jersey</a><a href="https://ovojersey.com/categories/fc-sion" target="_blank" rel="noopener noreferrer" class="link-item">FC Sion Jersey</a><a href="https://ovojersey.com/categories/fc-luzern" target="_blank" rel="noopener noreferrer" class="link-item">FC Luzern Jersey</a><a href="https://ovojersey.com/categories/fc-lugano" target="_blank" rel="noopener noreferrer" class="link-item">FC Lugano Jersey</a><a href="https://ovojersey.com/categories/fc-lausanne-sport" target="_blank" rel="noopener noreferrer" class="link-item">FC Lausanne Sport Jersey</a><a href="https://ovojersey.com/categories/fc-winterthur" target="_blank" rel="noopener noreferrer" class="link-item">FC Winterthur Jersey</a><a href="https://ovojersey.com/categories/yverdon-sport-fc" target="_blank" rel="noopener noreferrer" class="link-item">Yverdon Sport FC Jersey</a><a href="https://ovojersey.com/categories/fc-thun" target="_blank" rel="noopener noreferrer" class="link-item">FC Thun Jersey</a></div><h2>Allsvenskan</h2><div class="link-grid"><a href="https://ovojersey.com/categories/allsvenskan" target="_blank" rel="noopener noreferrer" class="link-item">Allsvenskan</a><a href="https://ovojersey.com/categories/aik" target="_blank" rel="noopener noreferrer" class="link-item">AIK Jersey</a><a href="https://ovojersey.com/categories/degerfors-if" target="_blank" rel="noopener noreferrer" class="link-item">Degerfors IF Jersey</a><a href="https://ovojersey.com/categories/gais" target="_blank" rel="noopener noreferrer" class="link-item">GAIS Jersey</a><a href="https://ovojersey.com/categories/halmstads-bk" target="_blank" rel="noopener noreferrer" class="link-item">Halmstads BK Jersey</a><a href="https://ovojersey.com/categories/hammarby-if" target="_blank" rel="noopener noreferrer" class="link-item">Hammarby IF Jersey</a><a href="https://ovojersey.com/categories/if-elfsborg" target="_blank" rel="noopener noreferrer" class="link-item">IF Elfsborg Jersey</a><a href="https://ovojersey.com/categories/ik-sirius" target="_blank" rel="noopener noreferrer" class="link-item">IK Sirius Jersey</a></div><h2>Danish Superliga / Greek Super League / Scottish Premiership / Ekstraklasa / A‑League / Super Lig & Other Categories</h2><div class="link-grid"><a href="https://ovojersey.com/categories/danish-superliga" target="_blank" rel="noopener noreferrer" class="link-item">Danish Superliga</a><a href="https://ovojersey.com/categories/fc-copenhagen" target="_blank" rel="noopener noreferrer" class="link-item">FC Copenhagen Jersey</a><a href="https://ovojersey.com/categories/fc-midtjylland" target="_blank" rel="noopener noreferrer" class="link-item">FC Midtjylland Jersey</a><a href="https://ovojersey.com/categories/greek-super-league" target="_blank" rel="noopener noreferrer" class="link-item">Greek Super League</a><a href="https://ovojersey.com/categories/aek-athens" target="_blank" rel="noopener noreferrer" class="link-item">AEK Athens Jersey</a><a href="https://ovojersey.com/categories/olympiacos-fc" target="_blank" rel="noopener noreferrer" class="link-item">Olympiacos FC Jersey</a><a href="https://ovojersey.com/categories/panathinaikos-fc" target="_blank" rel="noopener noreferrer" class="link-item">Panathinaikos FC Jersey</a><a href="https://ovojersey.com/categories/scottish-premiership-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Scottish Premiership Jersey</a><a href="https://ovojersey.com/categories/celtic" target="_blank" rel="noopener noreferrer" class="link-item">Celtic Jersey</a><a href="https://ovojersey.com/categories/rangers" target="_blank" rel="noopener noreferrer" class="link-item">Rangers Jersey</a><a href="https://ovojersey.com/categories/ekstraklasa" target="_blank" rel="noopener noreferrer" class="link-item">Ekstraklasa</a><a href="https://ovojersey.com/categories/legia-warszawa" target="_blank" rel="noopener noreferrer" class="link-item">Legia Warszawa Jersey</a><a href="https://ovojersey.com/categories/a-league" target="_blank" rel="noopener noreferrer" class="link-item">A‑League</a><a href="https://ovojersey.com/categories/super-lig" target="_blank" rel="noopener noreferrer" class="link-item">Super Lig</a><a href="https://ovojersey.com/categories/besiktas-jk" target="_blank" rel="noopener noreferrer" class="link-item">Besiktas JK Jersey</a><a href="https://ovojersey.com/categories/galatasaray-jersey" target="_blank" rel="noopener noreferrer" class="link-item">Galatasaray Jersey</a><a href="https://ovojersey.com/categories/fenerbahce" target="_blank" rel="noopener noreferrer" class="link-item">Fenerbahce Jersey</a><a href="https://ovojersey.com/categories/rb-salzburg" target="_blank" rel="noopener noreferrer" class="link-item">RB Salzburg Jersey</a><a href="https://ovojersey.com/categories/fc-seoul" target="_blank" rel="noopener noreferrer" class="link-item">FC Seoul Jersey</a><a href="https://ovojersey.com/categories/urawa-red-diamonds" target="_blank" rel="noopener noreferrer" class="link-item">Urawa Red Diamonds Jersey</a><a href="https://ovojersey.com/categories/fc-tokyo" target="_blank" rel="noopener noreferrer" class="link-item">FC Tokyo Jersey</a><a href="https://ovojersey.com/categories/kyoto-sanga-fc" target="_blank" rel="noopener noreferrer" class="link-item">Kyoto Sanga FC Jersey</a><a href="https://ovojersey.com/categories/nagoya-grampus" target="_blank" rel="noopener noreferrer" class="link-item">Nagoya Grampus Jersey</a><a href="https://ovojersey.com/categories/club-teams" target="_blank" rel="noopener noreferrer" class="link-item">Club Teams</a><a href="https://ovojersey.com/categories/premier-league" target="_blank" rel="noopener noreferrer" class="link-item">Premier League</a><a href="https://ovojersey.com/categories/laliga" target="_blank" rel="noopener noreferrer" class="link-item">LaLiga</a><a href="https://ovojersey.com/categories/ligue-1" target="_blank" rel="noopener noreferrer" class="link-item">Ligue‑1</a><a href="https://ovojersey.com/categories/bundesliga" target="_blank" rel="noopener noreferrer" class="link-item">Bundesliga</a><a href="https://ovojersey.com/categories/italian-serie-a" target="_blank" rel="noopener noreferrer" class="link-item">Italian Serie A</a><a href="https://ovojersey.com/categories/major-league-soccer" target="_blank" rel="noopener noreferrer" class="link-item">Major League Soccer</a><a href="https://ovojersey.com/categories/saudi-pro-league" target="_blank" rel="noopener noreferrer" class="link-item">Saudi Pro League</a><a href="https://ovojersey.com/categories/eredivisie" target="_blank" rel="noopener noreferrer" class="link-item">Eredivisie</a><a href="https://ovojersey.com/categories/brazilian-serie-a" target="_blank" rel="noopener noreferrer" class="link-item">Brazilian Serie A</a><a href="https://ovojersey.com/categories/ligamx" target="_blank" rel="noopener noreferrer" class="link-item">LigaMX</a></div>
+<div class="pager"><a href="page8.html" class="arrow">‹</a><a href="index.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><span class="current">9</span><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page10.html" class="arrow">›</a></div>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+let dark=localStorage.getItem('darkMode')==='1';
+function applyTheme(){
+  if(dark){document.documentElement.setAttribute('data-theme','dark');document.querySelector('.theme-btn').textContent='☀️ Light';}
+  else{document.documentElement.removeAttribute('data-theme');document.querySelector('.theme-btn').textContent='🌙 Dark';}
+}
+applyTheme();
+function toggleTheme(){dark=!dark;localStorage.setItem('darkMode',dark?'1':'0');applyTheme();}
+
+const searchInput=document.getElementById('searchInput');
+const linkItems=document.querySelectorAll('.link-item');
+const resultCount=document.getElementById('resultCount');
+linkItems.forEach(li=>{li._text=li.textContent;});
+function updateCount(){
+  const visible=Array.from(linkItems).filter(li=>li.style.display!=='none').length;
+  resultCount.textContent='Showing '+visible+' of '+linkItems.length+' links';
+}
+updateCount();
+
+function doSearch(){
+  const kw=searchInput.value.toLowerCase().trim();
+  linkItems.forEach(li=>{
+    const txt=li._text.toLowerCase();
+    if(!kw){li.style.display='';li.innerHTML=li._text;return;}
+    if(txt.includes(kw)){
+      li.style.display='';
+      const reg=new RegExp('('+kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+      li.innerHTML=li._text.replace(reg,'<mark>$1</mark>');
+    }else{li.style.display='none';}
+  });
+  updateCount();
+}
+searchInput.addEventListener('input',doSearch);
+searchInput.addEventListener('keyup',doSearch);
+document.addEventListener('keydown',function(e){
+  if(e.altKey&&e.key.toLowerCase()==='s'){e.preventDefault();searchInput.focus();}
+  if(e.key==='Escape'){searchInput.value='';doSearch();}
+});
+
+const bt=document.getElementById('backTop');
+window.addEventListener('scroll',function(){bt.style.display=window.scrollY>400?'flex':'none';});
+</script>
+</body>
+</html>
