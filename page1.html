@@ -708,7 +708,7 @@ searchInput.addEventListener('input',function(){
       card.style.display='';
       const reg = new RegExp(`(${kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi');
       textEl.innerHTML = textEl.textContent.replace(reg,'<mark>$1</mark>');
-      //搜索命中自动展开父分类
+      //
       const sec = card.closest('.category-section');
       const grid = sec.querySelector('.link-grid');
       const arrow = sec.querySelector('.category-title .arrow');
