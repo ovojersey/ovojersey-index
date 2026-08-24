@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLS · Liga MX · Saudi Pro League · Brasileirão - Ovojersey</title>
+<meta name="description" content="North American, Saudi and Brazilian football jerseys">
+<style>
+:root{--bg:#f7f9fc;--card:#fff;--text:#1e293b;--text2:#64748b;--border:#e2e8f0;--accent:#0058cc;--accent-hover:#0047a3;--accent-light:#ebf4ff;--shadow:0 12px 35px rgba(0,0,0,.07)}
+[data-theme="dark"]{--bg:#0f172a;--card:#1e293b;--text:#f1f5f9;--text2:#94a3b8;--border:#334155;--accent:#60a5fa;--accent-hover:#93c5fd;--accent-light:#1e3a8a;--shadow:0 12px 35px rgba(0,0,0,.2)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;max-width:1280px;margin:0 auto;padding:24px 20px 48px;background:var(--bg);color:var(--text);line-height:1.6}
+.breadcrumb{font-size:13px;color:var(--text2);margin-bottom:12px}
+.breadcrumb a{color:var(--accent);text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+h1{font-size:26px;font-weight:800;margin-bottom:6px}
+.subtitle{color:var(--text2);font-size:14px;margin-bottom:24px}
+.toolbar{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:24px;box-shadow:var(--shadow)}
+.search-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+#searchInput{flex:1;min-width:240px;padding:11px 14px;font-size:15px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);outline:none}
+#searchInput:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light)}
+.btn{padding:9px 13px;font-size:13px;border:1px solid var(--border);border-radius:9px;background:var(--card);color:var(--text);cursor:pointer;font-weight:600;transition:.2s;white-space:nowrap}
+.btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
+.filter-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.filter-btn{padding:5px 11px;font-size:12px;border:1px solid var(--border);border-radius:7px;background:var(--bg);color:var(--text2);cursor:pointer;font-weight:500;transition:.2s}
+.filter-btn:hover,.filter-btn.active{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
+.info-bar{color:var(--text2);font-size:13px}
+.league-section{margin-bottom:22px;border:1px solid var(--border);border-radius:13px;background:var(--card);box-shadow:var(--shadow);overflow:hidden}
+.league-header{padding:13px 17px;cursor:pointer;display:flex;align-items:center;gap:10px;background:var(--accent-light);border-bottom:1px solid var(--border)}
+.league-header:hover{background:var(--accent);color:#fff}
+.league-header:hover .league-count{background:rgba(255,255,255,.2);color:#fff}
+.league-title{font-size:16px;font-weight:700;flex:1}
+.league-count{font-size:11px;font-weight:600;padding:3px 9px;border-radius:15px;background:var(--accent);color:#fff}
+.arrow{font-size:13px;transition:.2s}
+.club-block{border-bottom:1px solid var(--border)}
+.club-block:last-child{border-bottom:none}
+.club-header{padding:10px 17px;cursor:pointer;display:flex;align-items:center;gap:8px;background:var(--bg)}
+.club-header:hover{background:var(--accent-light)}
+.club-name{font-size:14px;font-weight:600;flex:1}
+.club-count{font-size:11px;color:var(--text2)}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding:12px 17px}
+.product-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:9px 11px;text-decoration:none;color:var(--text);font-size:12px;font-weight:500;transition:.2s;display:flex;align-items:center;gap:7px}
+.product-card:hover{border-color:var(--accent);color:var(--accent);box-shadow:0 4px 12px rgba(0,88,204,.1);transform:translateY(-1px)}
+.product-card .icon{font-size:13px;flex-shrink:0}
+.product-card .text{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.badge{display:inline-block;font-size:9px;padding:1px 5px;border-radius:3px;font-weight:700;margin-left:4px;flex-shrink:0}
+.badge-mens{background:#dbeafe;color:#1e40af}
+.badge-womens{background:#fce7f3;color:#9d174d}
+.badge-kids{background:#fef3c7;color:#92400e}
+.badge-other{background:#e5e7eb;color:#374151}
+.pager{display:flex;align-items:center;justify-content:center;gap:5px;margin-top:28px;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);flex-wrap:wrap}
+.pager a,.pager span{min-width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;border:1px solid var(--border);background:var(--bg);padding:0 8px;transition:.2s}
+.pager a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
+.pager .current{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pager .disabled{opacity:.35;cursor:not-allowed;pointer-events:none}
+.theme-btn{position:fixed;top:16px;right:16px;padding:8px 13px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);cursor:pointer;font-size:12px;font-weight:600;z-index:100;box-shadow:var(--shadow)}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+.back-top{position:fixed;bottom:20px;right:20px;width:42px;height:42px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;font-size:18px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:var(--shadow)}
+.back-top:hover{border-color:var(--accent);color:var(--accent)}
+mark{background:#fef08a;color:#854d0e;padding:0 2px;border-radius:2px}
+@media(max-width:1100px){.product-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){body{padding:16px 14px 32px}h1{font-size:22px}.product-grid{grid-template-columns:1fr}.toolbar{padding:12px}}
+</style>
+</head>
+<body>
+<button class="theme-btn" id="themeBtn">🌙 Dark</button>
+<div class="breadcrumb"><a href="index.html">Home</a> / MLS · Liga MX · Saudi Pro League · Brasileirão</div>
+<h1>MLS · Liga MX · Saudi Pro League · Brasileirão</h1>
+<p class="subtitle">North American, Saudi and Brazilian football jerseys · 260 products</p>
+<div class="toolbar">
+  <div class="search-row">
+    <input type="text" id="searchInput" placeholder="Search products... (Alt+S)">
+    <button class="btn" id="toggleAllBtn">Expand/Collapse</button>
+    <button class="btn" id="copyLinksBtn">Copy URLs</button>
+    <button class="btn" id="copyTextBtn">Copy Names</button>
+  </div>
+  <div class="filter-row">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="mens">Men's</button>
+    <button class="filter-btn" data-filter="womens">Women's</button>
+    <button class="filter-btn" data-filter="kids">Kids</button>
+  </div>
+  <div class="info-bar" id="linkCountInfo">Total: 0 products</div>
+</div>
+  <div class="league-section" id="mls">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">MLS</span>
+      <span class="league-count">101 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Austin Fc</span>
+        <span class="club-count">5</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-austin-fc-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  Austin Fc Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -austin-fc-2025-third-travel-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Austin Fc  Travel 2025 Third Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -austin-fc-2025-third-travel-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Austin Fc  Travel 2025 Third Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -austin-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Austin Fc 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -austin-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Austin Fc 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Inter Miami</span>
+        <span class="club-count">29</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/2026-27-inter-miami-cf-training-uniform-soccer-kit-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf Training Uniform Soccer S 4Xl 2026-27 Kit</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/2026-27-inter-miami-cf-away-jersey-with-stars-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf With Stars S 4Xl 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/2026-27-inter-miami-cf-away-jersey-soccer-shirt-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf Jersey Soccer S 4Xl 2026-27 Away Shirt</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/2025-2026-inter-miami-reversible-windbreaker-pink-and-black-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">26 Inter Miami Reversible Windbreaker Pink And Black Soccer 2025-20 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/inter-miami-2025-third-fracht-sponsor-sleeve-patch" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami  Fracht Sponsor Sleeve Patch 2025 Third</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/inter-miami-2025-third-mls-patch-apple-tv" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami  Mls Patch Apple Tv 2025 Third</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/inter-miami-2025-third-fracht-sponsor-sleeve-patch-ykbijeig" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami  Fracht Sponsor Sleeve Patch 2025 Third</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/inter-miami-2025-third-mls-patch-apple-tv-alznnx74" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami  Mls Patch Apple Tv 2025 Third</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -inter-miami-cf-2025-third-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Third Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-inter-miami-cf-2025-third-travel-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf  Travel 2025 Third Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -inter-miami-cf-2025-third-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Third Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-inter-miami-cf-2025-third-travel-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf  Travel 2025 Third Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-inter-miami-cf-2025-third-hook-aeroready-shirt-c-black" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf  Hook Aeroready C Black 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-inter-miami-cf-2025-third-hook-aeroready-shirt-c-pink" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf  Hook Aeroready C Pink 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-inter-miami-cf-2025-third-pre-match-shirt-c-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf  Pre Match C White 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -inter-miami-cf-2025-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-inter-miami-cf-2025-third-pre-match-shirt-c-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf  Pre Match C White 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -inter-miami-cf-2025-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -inter-miami-cf-2025-away-kit" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Away Kit (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -inter-miami-cf-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Away Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -inter-miami-cf-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Away Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -inter-miami-cf-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -inter-miami-cf-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Cf 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/2023-2024-inter-miami-reversible-windbreaker-blue-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">24 Inter Miami Reversible Windbreaker Blue Soccer 2023-20 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/2023-inter-miami-windbreaker-pink-black-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami Windbreaker Pink Black Soccer 2023 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/inter-miami-2023-away-fracht-sponsor-sleeve-patch" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami  Fracht Sponsor Sleeve Patch 2023 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/inter-miami-2023-away-mls-patch-apple-tv" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami  Mls Patch Apple Tv 2023 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/inter-miami-2023-away-fracht-sponsor-sleeve-patch-nxzrxhgk" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami  Fracht Sponsor Sleeve Patch 2023 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/inter-miami-2023-away-mls-patch-apple-tv-cthjtpk2" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Inter Miami  Mls Patch Apple Tv 2023 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">La Galaxy</span>
+        <span class="club-count">18</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-la-galaxy-men’s-tiro-26-sleeveless-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  La Galaxy Men’S Tiro 26 Sleeveless Soccer 2026-27 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/adidas-2026-27-la-galaxy-men’s-authentic-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  La Galaxy Men’S Soccer 2026-27 Away Jersey Authentic</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/adidas-2025-26-la-galaxy-men’s-gmg-pre-match-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  La Galaxy Men’S Gmg Pre Match Soccer 2025-26 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/adidas-2025-la-galaxy-men’s-united-we-play-training-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  La Galaxy Men’S United We Play Training 2025 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-la-galaxy-2025-third-hook-aeroready-shirt-c-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Hook Aeroready C White 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-la-galaxy-2025-third-hook-aeroready-shirt-c-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Hook Aeroready C White 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/la-galaxy-2025-away-mls-patch-apple-tv" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Mls Patch Apple Tv 2025 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/la-galaxy-2025-away-mls-patch-apple-tv-v0ndpcub" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Mls Patch Apple Tv 2025 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -la-galaxy-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy 2025 Away Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -la-galaxy-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy 2025 Away Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -la-galaxy-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -la-galaxy-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/la-galaxy-2021-23-away-sponsor-honey-patch" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Sponsor Honey Patch 2021-23 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/la-galaxy-2021-23-away-sponsor-honey-patch-5u1x0iu7" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Sponsor Honey Patch 2021-23 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/la-galaxy-2021-22-away-mls-patch" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Mls Patch 2021-22 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/la-galaxy-2021-22-away-mls-patch-tkxpawdu" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Mls Patch 2021-22 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/la-galaxy-2020-away-mls-patch" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Mls Patch 2020 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/la-galaxy-2020-away-mls-patch-jlz0m4vy" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">La Galaxy  Mls Patch 2020 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Los Angeles Fc</span>
+        <span class="club-count">7</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-los-angeles-fc-x-nts-2025-urban-purist-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Los Angeles Fc X Nts  Urban Purist 2025 Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-los-angeles-fc-x-nts-2025-urban-purist-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Los Angeles Fc X Nts  Urban Purist 2025 Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-los-angeles-fc-x-nts-2025-urban-purist-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Los Angeles Fc X Nts  Urban Purist 2025 Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-los-angeles-fc-x-nts-2025-urban-purist-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Los Angeles Fc X Nts  Urban Purist 2025 Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-los-angeles-fc-2025-third-travel-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Los Angeles Fc  Travel 2025 Third Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-los-angeles-fc-2025-third-travel-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Los Angeles Fc  Travel 2025 Third Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -los-angeles-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Los Angeles Fc 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Nashville Sc</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids -nashville-sc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Nashville Sc 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -nashville-sc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Nashville Sc 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">New York City Fc</span>
+        <span class="club-count">4</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-new-york-city-fc-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  New York City Fc Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -new-york-city-fc-2025-away-kit" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">New York City Fc 2025 Away Kit (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -new-york-city-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">New York City Fc 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -new-york-city-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">New York City Fc 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Orlando City</span>
+        <span class="club-count">3</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-orlando-city-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  Orlando City Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -orlando-city-sc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Orlando City Sc 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -orlando-city-sc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Orlando City Sc 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Philadelphia Union</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-philadelphia-union-2025-third-hook-relaxed-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Philadelphia Union  Hook Relaxed 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-philadelphia-union-2025-third-hook-relaxed-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Philadelphia Union  Hook Relaxed 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Real Salt Lake</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids -real-salt-lake-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Real Salt Lake 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -real-salt-lake-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Real Salt Lake 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">San Diego Fc</span>
+        <span class="club-count">4</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-san-diego-fc-2025-third-hook-aeroready-shirt-c-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">San Diego Fc  Hook Aeroready C White 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-san-diego-fc-2025-third-hook-aeroready-shirt-c-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">San Diego Fc  Hook Aeroready C White 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/san-diego-fc-2025-away-mls-patch-apple-tv" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">San Diego Fc  Mls Patch Apple Tv 2025 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/san-diego-fc-2025-away-mls-patch-apple-tv-stqbot2h" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">San Diego Fc  Mls Patch Apple Tv 2025 Away</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">San Jose Earthquakes</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-san-jose-earthquakes-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  San Jose Earthquakes Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -san-jose-earthquakes-2025-away-kit" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">San Jose Earthquakes 2025 Away Kit (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Seattle Sounders</span>
+        <span class="club-count">7</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-seattle-sounders-fc-2025-third-hook-aeroready-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Seattle Sounders Fc  Hook Aeroready 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-seattle-sounders-fc-2025-third-pre-match-shirt-c-green" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Seattle Sounders Fc  Pre Match C Green 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-seattle-sounders-fc-2025-third-hook-aeroready-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Seattle Sounders Fc  Hook Aeroready 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-seattle-sounders-fc-2025-third-pre-match-shirt-c-green" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Seattle Sounders Fc  Pre Match C Green 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-seattle-sounders-fc-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Seattle Sounders Fc 2025 Away Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-seattle-sounders-fc-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Seattle Sounders Fc 2025 Away Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-seattle-sounders-fc-2009-11-away-retro-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Seattle Sounders Fc 2009-11 Away Shirt Retro (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Sporting Kansas City</span>
+        <span class="club-count">4</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-sporting-kansas-city-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  Sporting Kansas City Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids -sporting-kansas-city-2025-away-kit" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Sporting Kansas City 2025 Away Kit (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-sporting-kansas-city-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Sporting Kansas City 2025 Away Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-sporting-kansas-city-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Sporting Kansas City 2025 Away Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Toronto Fc</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids -toronto-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Toronto Fc 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens -toronto-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Toronto Fc 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Vancouver Whitecaps</span>
+        <span class="club-count">6</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-vancouver-whitecaps-fc-2025-third-history-month-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Vancouver Whitecaps Fc  History Month 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-vancouver-whitecaps-fc-2025-third-history-month-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Vancouver Whitecaps Fc  History Month 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-vancouver-whitecaps-fc-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Vancouver Whitecaps Fc 2025 Away Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-vancouver-whitecaps-fc-2025-away-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Vancouver Whitecaps Fc 2025 Away Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-vancouver-whitecaps-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Vancouver Whitecaps Fc 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-vancouver-whitecaps-fc-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Vancouver Whitecaps Fc 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">St Louis City</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-st-louis-city-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  St Louis City Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Atlanta United</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-atlanta-united-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  Atlanta United Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Houston Dynamo</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-houston-dynamo-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  Houston Dynamo Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Portland Timbers</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2026-27-portland-timbers-men’s-stadium-away-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  Portland Timbers Men’S Stadium Soccer 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="league-section" id="liga-mx">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">Liga MX</span>
+      <span class="league-count">72 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Atlas</span>
+        <span class="club-count">6</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-atlas-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Atlas Fc 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-atlas-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Atlas Fc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-atlas-fc-2025-26-away-long-sleeve-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Atlas Fc  Long Sleeve 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-atlas-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Atlas Fc 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-atlas-fc-2025-26-away-long-sleeve-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Atlas Fc  Long Sleeve 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-atlas-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Atlas Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Club Puebla</span>
+        <span class="club-count">4</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-club-puebla-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Club Puebla 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-club-puebla-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Club Puebla 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-club-puebla-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Club Puebla 2024-25 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-club-puebla-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Club Puebla 2024-25 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Cruz Azul</span>
+        <span class="club-count">10</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-cruz-azul-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-cruz-azul-2025-26-third-warm-up-shirt-c-red-navy" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul  Warm Up C Red 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-cruz-azul-2025-26-third-warm-up-shirt-c-turquoise-navy" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul  Warm Up C 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-cruz-azul-2025-26-third-warm-up-shirt-c-turquoise-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul  Warm Up C  White 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-cruz-azul-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-cruz-azul-2025-26-third-warm-up-shirt-c-red-navy" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul  Warm Up C Red 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-cruz-azul-2025-26-third-warm-up-shirt-c-turquoise-navy" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul  Warm Up C 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-cruz-azul-2025-26-third-warm-up-shirt-c-turquoise-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul  Warm Up C  White 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-cruz-azul-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul 2024-25 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-cruz-azul-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Cruz Azul 2024-25 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Guadalajara</span>
+        <span class="club-count">6</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-guadalajara-chivas-2025-26-third-esports-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Guadalajara Chivas  Esports 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-guadalajara-chivas-2025-26-third-esports-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Guadalajara Chivas  Esports 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-guadalajara-chivas-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Guadalajara Chivas 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-guadalajara-chivas-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Guadalajara Chivas 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-guadalajara-chivas-2025-street-retro-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Guadalajara Chivas  Street 2025 Shirt Retro (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-guadalajara-chivas-2025-street-retro-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Guadalajara Chivas  Street 2025 Shirt Retro (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Monterrey</span>
+        <span class="club-count">10</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-monterrey-fc-2025-80th-anniversary-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc Th 2025-80 Shirt Anniversary (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-monterrey-fc-2025-80th-anniversary-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc Th 2025-80 Shirt Anniversary (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-monterrey-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-monterrey-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-monterrey-fc-2025-kidsuper-shirt-c-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc  Kidsuper C White 2025 Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-monterrey-fc-2025-kidsuper-shirt-c-white" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc  Kidsuper C White 2025 Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-monterrey-fc-2024-25-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc 2024-25 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-monterrey-fc-2024-25-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc 2024-25 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-monterrey-fc-retro-strt-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc Strt Shirt Retro (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-monterrey-fc-retro-strt-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Monterrey Fc Strt Shirt Retro (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Necaxa</span>
+        <span class="club-count">4</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-necaxa-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Necaxa 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-necaxa-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Necaxa 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-necaxa-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Necaxa 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-necaxa-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Necaxa 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Pachuca</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-pachuca-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Pachuca 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-pachuca-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Pachuca 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Pumas Unam</span>
+        <span class="club-count">8</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-pumas-unam-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Pumas Unam 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-pumas-unam-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Pumas Unam 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-pumas-unam-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Pumas Unam 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-pumas-unam-2024-25-third-prematch-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Pumas Unam  Prematch 2024-25 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-pumas-unam-2024-25-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Pumas Unam 2024-25 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-pumas-unam-2024-25-third-prematch-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Pumas Unam  Prematch 2024-25 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-pumas-unam-2024-25-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Pumas Unam 2024-25 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-pumas-unam-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Pumas Unam 2024-25 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Santos Laguna</span>
+        <span class="club-count">8</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-santos-laguna-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Santos Laguna 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-santos-laguna-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Santos Laguna 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-santos-laguna-2025-26-away-long-sleeve-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Santos Laguna  Long Sleeve 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-santos-laguna-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Santos Laguna 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-santos-laguna-2025-26-away-long-sleeve-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Santos Laguna  Long Sleeve 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-santos-laguna-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Santos Laguna 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-santos-laguna-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Santos Laguna 2024-25 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-santos-laguna-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Santos Laguna 2024-25 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Tigres Uanl</span>
+        <span class="club-count">5</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/2026-27-tigres-uanl-away-jersey-soccer-shirt-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Tigres Uanl Jersey Soccer S 4Xl 2026-27 Away Shirt</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-tigres-uanl-2025-26-third-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Tigres Uanl 2025-26 Third Shorts (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-tigres-uanl-2025-26-third-shorts" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Tigres Uanl 2025-26 Third Shorts (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-tigres-uanl-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Tigres Uanl 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-tigres-uanl-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Tigres Uanl 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Santos</span>
+        <span class="club-count">4</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-santos-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Santos Fc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-santos-fc-2025-26-third-pink-october-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Santos Fc  Pink October 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-santos-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Santos Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/2025-2026-santos-windbreaker-black-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">26 Santos Windbreaker Black Soccer 2025-20 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Chivas Guadalajara</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/2026-27-chivas-guadalajara-120th-anniversary-edition-jersey-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Chivas Guadalajara 120Th Edition S 4Xl 2026-27 Jersey Anniversary</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/2026-27-chivas-guadalajara-player-version-jersey-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Chivas Guadalajara S 4Xl 2026-27 Jersey Player Version</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Club America</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/adidas-2025-26-club-america-men’s-training-soccer-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  Club America Men’S Training Soccer 2025-26 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/adidas-2025-26-club-america-men’s-tiro-25-training-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Adidas  Club America Men’S Tiro 25 Training 2025-26 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Pumas</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/nike-2025-26-pumas-men’s-academy-pro-pre-match-top" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Nike  Pumas Men’S Academy Pro Pre Match Top 2025-26</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="league-section" id="brasileiro">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">Brasileirão</span>
+      <span class="league-count">47 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Sport</span>
+        <span class="club-count">8</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-mainz-05-2025-26-third-esports-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Mainz 05  Esports 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-fc-lausanne-sport-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Fc Lausanne Sport 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-mainz-05-2025-26-third-esports-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Mainz 05  Esports 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-fc-lausanne-sport-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Fc Lausanne Sport 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-fc-lausanne-sport-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Fc Lausanne Sport 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-yverdon-sport-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Yverdon Sport Fc 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-fc-lausanne-sport-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Fc Lausanne Sport 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-yverdon-sport-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Yverdon Sport Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Corinthians</span>
+        <span class="club-count">3</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-corinthians-paulista-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Corinthians Paulista 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-corinthians-paulista-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Corinthians Paulista 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-corinthians-paulista-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Corinthians Paulista 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Flamengo</span>
+        <span class="club-count">11</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/2026-27-flamengo-away-jersey-with-sponsor-logo-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo With Sponsor Logo S 4Xl 2026-27 Away Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/2026-27-flamengo-away-jersey-soccer-shirt-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo Jersey Soccer S 4Xl 2026-27 Away Shirt</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-flamengo-2025-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-flamengo-2025-third-sponsored-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo  Sponsored 2025 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-flamengo-2025-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-flamengo-2025-third-sponsored-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo  Sponsored 2025 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-flamengo-2025-away-kit" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo 2025 Away Kit (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-flamengo-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-flamengo-2025-away-sponsored-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo  Sponsored 2025 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-flamengo-2025-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-flamengo-2025-away-sponsored-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Flamengo  Sponsored 2025 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Botafogo</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-botafogo-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Botafogo 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-botafogo-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Botafogo 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Cruzeiro</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-cruzeiro-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Cruzeiro 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-cruzeiro-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Cruzeiro 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Internacional</span>
+        <span class="club-count">3</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-internacional-2025-26-third-pink-october-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Internacional  Pink October 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-internacional-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Internacional 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-internacional-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Internacional 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Juventude</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-juventude-2026-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Juventude 2026 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Palmeiras</span>
+        <span class="club-count">6</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/2026-27-palmeiras-away-jersey-soccer-shirt-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Palmeiras Jersey Soccer S 4Xl 2026-27 Away Shirt</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/2026-27-palmeiras-white-away-jersey-soccer-shirt-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Palmeiras White Jersey Soccer S 4Xl 2026-27 Away Shirt</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-palmeiras-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Palmeiras 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-palmeiras-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Palmeiras 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/2025-2026-palmeiras-windbreaker-white-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">26 Palmeiras Windbreaker White 2025-20 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/2023-2024-palmeiras-windbreaker-dark-green-jersey" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">24 Palmeiras Windbreaker Dark Green 2023-20 Jersey</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Sport Recife</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-sport-recife-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Sport Recife 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-sport-recife-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Sport Recife 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Vasco</span>
+        <span class="club-count">6</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-vasco-2025-26-special-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Vasco  Special 2025-26 Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-vasco-2025-26-special-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Vasco  Special 2025-26 Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-vasco-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Vasco 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-vasco-2025-26-third-blue-november-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Vasco  Blue November 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-vasco-2025-26-third-pink-october-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Vasco  Pink October 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-vasco-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Vasco 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Gremio</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-gremio-2025-26-third-pink-october-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Gremio  Pink October 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-gremio-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Gremio 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Fluminense</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/2026-27-fluminense-away-jersey-soccer-shirt-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Fluminense Jersey Soccer S 4Xl 2026-27 Away Shirt</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="league-section" id="saudi-pro-league">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">Saudi Pro League</span>
+      <span class="league-count">40 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Hilal</span>
+        <span class="club-count">4</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-al-hilal-sfc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Hilal Sfc 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-hilal-sfc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Hilal Sfc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-hilal-sfc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Hilal Sfc 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-hilal-sfc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Hilal Sfc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Nassr</span>
+        <span class="club-count">10</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/2026-27-al-nassr-training-uniform-soccer-kit-s-4xl" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Training Uniform Soccer S 4Xl 2026-27 Kit</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-nassr-fc-2025-26-third-kit" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2025-26 Third Kit (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-nassr-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-nassr-fc-2025-26-away-kit" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2025-26 Away Kit (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-nassr-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-nassr-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-nassr-fc-2024-25-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2024-25 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-nassr-fc-2024-25-away-kit" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2024-25 Away Kit (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-nassr-fc-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2024-25 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-nassr-fc-2024-25-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Nassr Fc 2024-25 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Ahli</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-ahli-sfc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Ahli Sfc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-ahli-sfc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Ahli Sfc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Fateh</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-fateh-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Fateh 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-fateh-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Fateh 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Fayha</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-fayha-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Fayha Fc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-fayha-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Fayha Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Khaleej</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-khaleej-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Khaleej Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Okhdood</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-okhdood-club-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Okhdood Club 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Raed</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-raed-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Raed Fc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-raed-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Raed Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Riyadh</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-riyadh-sc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Riyadh Sc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-riyadh-sc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Riyadh Sc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Shabab</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-shabab-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Shabab Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Taawoun</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-taawoun-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Taawoun 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-taawoun-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Taawoun 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Wehda</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-al-wehda-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Wehda Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Damac</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mens-damac-fc-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Damac Fc 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-damac-fc-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Damac Fc 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Al Ittihad</span>
+        <span class="club-count">8</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kids-al-ittihad-club-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Ittihad Club 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-ittihad-club-2025-26-third-warm-up-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Ittihad Club  Warm Up 2025-26 Third Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-ittihad-club-2025-26-third-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Ittihad Club 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-ittihad-club-2025-26-third-warm-up-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Ittihad Club  Warm Up 2025-26 Third Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-ittihad-club-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Ittihad Club 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/kids-al-ittihad-club-2025-26-away-unsponsored-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="kids">
+        <span class="icon">👕</span>
+        <span class="text">Al Ittihad Club 2025-26 Away Shirt (Kids)</span>
+        <span class="badge badge-kids">K</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-ittihad-club-2025-26-away-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Ittihad Club 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      <a href="https://ovojersey.com/products/mens-al-ittihad-club-2025-26-away-unsponsored-shirt" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="mens">
+        <span class="icon">👕</span>
+        <span class="text">Al Ittihad Club 2025-26 Away Shirt (Men's)</span>
+        <span class="badge badge-mens">M</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+<div class="pager">
+<a href="page7.html">‹</a><a href="page1.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><span class="current">8</span><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><a href="page14.html">14</a><a href="page15.html">15</a><a href="page16.html">16</a><a href="page9.html">›</a>
+</div>
+<button class="back-top" id="backTop">↑</button>
+<script>
+let dark=localStorage.getItem('darkMode')==='1';
+const themeBtn=document.getElementById('themeBtn');
+function applyTheme(){if(dark){document.documentElement.setAttribute('data-theme','dark');themeBtn.textContent='☀️ Light'}else{document.documentElement.removeAttribute('data-theme');themeBtn.textContent='🌙 Dark'}}
+applyTheme();
+themeBtn.addEventListener('click',()=>{dark=!dark;localStorage.setItem('darkMode',dark?'1':'0');applyTheme()});
+// Collapse
+document.querySelectorAll('.league-header').forEach(h=>{h.addEventListener('click',()=>{const b=h.nextElementSibling;const a=h.querySelector('.arrow');if(b.style.display==='none'){b.style.display='block';a.textContent='▾'}else{b.style.display='none';a.textContent='▿'}})});
+document.querySelectorAll('.club-header').forEach(h=>{h.addEventListener('click',()=>{const g=h.nextElementSibling;const a=h.querySelector('.arrow');if(g.style.display==='none'){g.style.display='grid';a.textContent='▾'}else{g.style.display='none';a.textContent='▿'}})});
+let globalOpen=true;
+document.getElementById('toggleAllBtn').addEventListener('click',()=>{globalOpen=!globalOpen;document.querySelectorAll('.league-body,.product-grid').forEach(g=>{g.style.display=globalOpen?(g.classList.contains('product-grid')?'grid':'block'):'none'});document.querySelectorAll('.arrow').forEach(a=>{a.textContent=globalOpen?'▾':'▿'})});
+// Search
+const searchInput=document.getElementById('searchInput');
+const productCards=document.querySelectorAll('.product-card');
+const linkCountInfo=document.getElementById('linkCountInfo');
+productCards.forEach(c=>{c._text=c.querySelector('.text').textContent.toLowerCase()});
+linkCountInfo.innerText='Total: '+productCards.length+' products';
+document.addEventListener('keydown',function(e){if(e.altKey&&e.key.toLowerCase()==='s'){e.preventDefault();searchInput.focus()}if(e.key==='Escape'){searchInput.value='';searchInput.dispatchEvent(new Event('input'))}});
+searchInput.addEventListener('input',function(){const kw=this.value.toLowerCase().trim();productCards.forEach(c=>{const txt=c._text;const tEl=c.querySelector('.text');if(!kw){c.style.display='';tEl.innerHTML=tEl.textContent;return}if(txt.includes(kw)){c.style.display='';const reg=new RegExp('('+kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');tEl.innerHTML=tEl.textContent.replace(reg,'<mark>$1</mark>');const sec=c.closest('.league-section');const body=sec.querySelector('.league-body');body.style.display='block';sec.querySelector('.league-header .arrow').textContent='▾';const club=c.closest('.club-block');if(club){club.querySelector('.product-grid').style.display='grid';club.querySelector('.club-header .arrow').textContent='▾'}}else{c.style.display='none'}})});
+// URL param search
+const params=new URLSearchParams(window.location.search);
+const q=params.get('q');
+if(q){searchInput.value=q;searchInput.dispatchEvent(new Event('input'))}
+// Filter
+let activeFilter='all';
+document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;productCards.forEach(c=>{if(activeFilter==='all'||c.dataset.aud===activeFilter){c.style.display=''}else{c.style.display='none'}})})});
+// Copy
+document.getElementById('copyLinksBtn').addEventListener('click',async()=>{const links=Array.from(productCards).filter(c=>c.style.display!=='none').map(a=>a.href).join('\n');try{await navigator.clipboard.writeText(links);alert('Copied '+links.split('\n').length+' URLs!')}catch(e){alert('Copy failed')}});
+document.getElementById('copyTextBtn').addEventListener('click',async()=>{const names=Array.from(productCards).filter(c=>c.style.display!=='none').map(a=>a.querySelector('.text').textContent).join('\n');try{await navigator.clipboard.writeText(names);alert('Copied '+names.split('\n').length+' names!')}catch(e){alert('Copy failed')}});
+// Back to top
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>{backTop.style.display=window.scrollY>400?'flex':'none'});
+backTop.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+// Hash scroll
+if(window.location.hash){setTimeout(()=>{const el=document.getElementById(window.location.hash.substring(1));if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},300)}
+</script>
+</body>
+</html>

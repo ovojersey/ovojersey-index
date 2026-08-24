@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signed Jerseys - Ovojersey</title>
+<meta name="description" content="Autographed football jerseys with certificate">
+<style>
+:root{--bg:#f7f9fc;--card:#fff;--text:#1e293b;--text2:#64748b;--border:#e2e8f0;--accent:#0058cc;--accent-hover:#0047a3;--accent-light:#ebf4ff;--shadow:0 12px 35px rgba(0,0,0,.07)}
+[data-theme="dark"]{--bg:#0f172a;--card:#1e293b;--text:#f1f5f9;--text2:#94a3b8;--border:#334155;--accent:#60a5fa;--accent-hover:#93c5fd;--accent-light:#1e3a8a;--shadow:0 12px 35px rgba(0,0,0,.2)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;max-width:1280px;margin:0 auto;padding:24px 20px 48px;background:var(--bg);color:var(--text);line-height:1.6}
+.breadcrumb{font-size:13px;color:var(--text2);margin-bottom:12px}
+.breadcrumb a{color:var(--accent);text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+h1{font-size:26px;font-weight:800;margin-bottom:6px}
+.subtitle{color:var(--text2);font-size:14px;margin-bottom:24px}
+.toolbar{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:24px;box-shadow:var(--shadow)}
+.search-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+#searchInput{flex:1;min-width:240px;padding:11px 14px;font-size:15px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);outline:none}
+#searchInput:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light)}
+.btn{padding:9px 13px;font-size:13px;border:1px solid var(--border);border-radius:9px;background:var(--card);color:var(--text);cursor:pointer;font-weight:600;transition:.2s;white-space:nowrap}
+.btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
+.filter-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.filter-btn{padding:5px 11px;font-size:12px;border:1px solid var(--border);border-radius:7px;background:var(--bg);color:var(--text2);cursor:pointer;font-weight:500;transition:.2s}
+.filter-btn:hover,.filter-btn.active{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
+.info-bar{color:var(--text2);font-size:13px}
+.league-section{margin-bottom:22px;border:1px solid var(--border);border-radius:13px;background:var(--card);box-shadow:var(--shadow);overflow:hidden}
+.league-header{padding:13px 17px;cursor:pointer;display:flex;align-items:center;gap:10px;background:var(--accent-light);border-bottom:1px solid var(--border)}
+.league-header:hover{background:var(--accent);color:#fff}
+.league-header:hover .league-count{background:rgba(255,255,255,.2);color:#fff}
+.league-title{font-size:16px;font-weight:700;flex:1}
+.league-count{font-size:11px;font-weight:600;padding:3px 9px;border-radius:15px;background:var(--accent);color:#fff}
+.arrow{font-size:13px;transition:.2s}
+.club-block{border-bottom:1px solid var(--border)}
+.club-block:last-child{border-bottom:none}
+.club-header{padding:10px 17px;cursor:pointer;display:flex;align-items:center;gap:8px;background:var(--bg)}
+.club-header:hover{background:var(--accent-light)}
+.club-name{font-size:14px;font-weight:600;flex:1}
+.club-count{font-size:11px;color:var(--text2)}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding:12px 17px}
+.product-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:9px 11px;text-decoration:none;color:var(--text);font-size:12px;font-weight:500;transition:.2s;display:flex;align-items:center;gap:7px}
+.product-card:hover{border-color:var(--accent);color:var(--accent);box-shadow:0 4px 12px rgba(0,88,204,.1);transform:translateY(-1px)}
+.product-card .icon{font-size:13px;flex-shrink:0}
+.product-card .text{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.badge{display:inline-block;font-size:9px;padding:1px 5px;border-radius:3px;font-weight:700;margin-left:4px;flex-shrink:0}
+.badge-mens{background:#dbeafe;color:#1e40af}
+.badge-womens{background:#fce7f3;color:#9d174d}
+.badge-kids{background:#fef3c7;color:#92400e}
+.badge-other{background:#e5e7eb;color:#374151}
+.pager{display:flex;align-items:center;justify-content:center;gap:5px;margin-top:28px;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);flex-wrap:wrap}
+.pager a,.pager span{min-width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;border:1px solid var(--border);background:var(--bg);padding:0 8px;transition:.2s}
+.pager a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
+.pager .current{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pager .disabled{opacity:.35;cursor:not-allowed;pointer-events:none}
+.theme-btn{position:fixed;top:16px;right:16px;padding:8px 13px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);cursor:pointer;font-size:12px;font-weight:600;z-index:100;box-shadow:var(--shadow)}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+.back-top{position:fixed;bottom:20px;right:20px;width:42px;height:42px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;font-size:18px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:var(--shadow)}
+.back-top:hover{border-color:var(--accent);color:var(--accent)}
+mark{background:#fef08a;color:#854d0e;padding:0 2px;border-radius:2px}
+@media(max-width:1100px){.product-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){body{padding:16px 14px 32px}h1{font-size:22px}.product-grid{grid-template-columns:1fr}.toolbar{padding:12px}}
+</style>
+</head>
+<body>
+<button class="theme-btn" id="themeBtn">🌙 Dark</button>
+<div class="breadcrumb"><a href="index.html">Home</a> / Signed Jerseys</div>
+<h1>Signed Jerseys</h1>
+<p class="subtitle">Autographed football jerseys with certificate · 136 products</p>
+<div class="toolbar">
+  <div class="search-row">
+    <input type="text" id="searchInput" placeholder="Search products... (Alt+S)">
+    <button class="btn" id="toggleAllBtn">Expand/Collapse</button>
+    <button class="btn" id="copyLinksBtn">Copy URLs</button>
+    <button class="btn" id="copyTextBtn">Copy Names</button>
+  </div>
+  <div class="info-bar" id="linkCountInfo">Total: 0 products</div>
+</div>
+  <div class="league-section" id="national-teams">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">National Teams</span>
+      <span class="league-count">24 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Netherlands</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/dennis-bergkamp-signed-netherlands-97-98-world-cup-home-jersey-shirt-coa-1998" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Dennis Bergkamp Netherlands 97 98 Jersey Coa 1998 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Spain</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/lamine-yamal-signed-spain-world-cup-home-jersey-shirt-coa-2026" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lamine Yamal Spain Jersey Coa 2026 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/fernando-torres-signed-spain-final-07-08-home-jersey-shirt-coa-2008" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Fernando Torres Spain Final 07 08 Jersey Coa 2008 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Brazil</span>
+        <span class="club-count">4</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/neymar-jr-signed-brazil-world-cup-home-jersey-shirt-coa-2026" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Neymar Jr Brazil Jersey Coa 2026 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/ronaldinho-ga-cho-signed-brazil-02-03-home-jersey-shirt-coa-2002-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Ronaldinho Ga Cho Brazil 02 03 Jersey Coa 2002 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/rivaldo-signed-brazil-97-98-world-cup-home-jersey-shirt-coa-retro-1998" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Rivaldo Brazil 97 98 Jersey Coa 1998 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/pele-pel-signed-brazil-1970-home-jersey-shirt-coa-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Pele Pel Brazil 1970 Jersey Coa Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">France</span>
+        <span class="club-count">3</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/kylian-mbappe-signed-france-world-cup-home-jersey-shirt-coa-2026" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Kylian Mbappe France Jersey Coa 2026 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/zinedine-zidane-signed-france-05-06-away-jersey-shirt-coa-2006" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Zinedine Zidane France 05 06 Jersey Coa 2006 Away Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/zinedine-zidane-signed-france-97-98-home-jersey-shirt-coa-1998-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Zinedine Zidane France 97 98 Jersey Coa 1998 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Jordan</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/michael-jordan-signed-chicago-bulls-nba-23-signature-jersey-shirt-coa-1997-98" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Michael Jordan Chicago Bulls Nba 23 Signature Jersey Coa 1997-98 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/michael-jordan-signed-23-bulls-black-alternate-shirt-jersey-coa" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Michael Jordan 23 Bulls Black Alternate Jersey Coa Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Argentina</span>
+        <span class="club-count">5</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/lionel-messi-signed-argentina-world-cup-home-jersey-shirt-coa-2026" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Argentina Jersey Coa 2026 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lionel-messi-signed-argentina-24-25-home-jersey-shirt-coa-2024" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Argentina 24 25 Jersey Coa 2024 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lionel-messi-signed-argentina-world-cup-home-jersey-shirt-coa-2022" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Argentina Jersey Coa 2022 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/gabriel-batistuta-signed-argentina-1998-home-jersey-shirt-coa-97-98-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Gabriel Batistuta Argentina 1998 Jersey Coa 97 98 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/diego-maradona-signed-argentina-1986-home-jersey-shirt-coa-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Diego Maradona Argentina 1986 Jersey Coa Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Italy</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/gianluigi-buffon-signed-italy-2006-world-cup-home-jersey-shirt-coa-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Gianluigi Buffon Italy  Jersey Coa 2006 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/roberto-baggio-signed-italy-home-world-cup-jersey-shirt-coa-1994-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Roberto Baggio Italy Jersey Coa 1994 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Germany</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/toni-kroos-signed-germany-24-25-final-home-jersey-shirt-coa-2024" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Toni Kroos Germany 24 25 Final Jersey Coa 2024 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Usa</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/christian-pulisic-signed-usa-world-cup-home-jersey-shirt-coa-2026" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Christian Pulisic Usa Jersey Coa 2026 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Croatia</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/luka-modric-signed-croatia-world-cup-home-jersey-shirt-coa-2026" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Luka Modric Croatia Jersey Coa 2026 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Egypt</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/mo-salah-signed-egypt-world-cup-home-jersey-shirt-coa-2026" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Mo Salah Egypt Jersey Coa 2026 Home Shirt World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">England</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/david-beckham-signed-england-97-98-home-jersey-shirt-coa-1998-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">David Beckham England 97 98 Jersey Coa 1998 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="league-section" id="premier-league">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">Premier League</span>
+      <span class="league-count">53 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Liverpool</span>
+        <span class="club-count">22</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/liverpool-full-2025-signed-team-squad-signature-jersey-shirt-coa-25-26" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Liverpool Full  Team Squad Signature Jersey Coa 25 26 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/mo-salah-signed-liverpool-25-26-final-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Mo Salah Liverpool 25 26 Final Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/alisson-becker-signed-liverpool-24-25-home-goalkeeper-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Alisson Becker Liverpool 24 25 Goalkeeper Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/hugo-ekitike-signed-liverpool-25-26-debut-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Hugo Ekitike Liverpool 25 26 Debut Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/virgil-van-dijk-signed-liverpool-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Virgil Van Dijk Liverpool 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/dominik-szoboszlai-signed-liverpool-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Dominik Szoboszlai Liverpool 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/florian-wirtz-signed-liverpool-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Florian Wirtz Liverpool 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/mo-salah-signed-liverpool-25-26-final-home-jersey-shirt-coa-2025-npo84tla" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Mo Salah Liverpool 25 26 Final Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/luis-diaz-signed-d-az-liverpool-final-24-25-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Luis Diaz D Az Liverpool Final 24 25 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/mo-salah-signed-liverpool-24-25-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Mo Salah Liverpool 24 25 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/liverpool-full-2024-signed-champions-team-squad-signature-jersey-shirt-coa-24-25" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Liverpool Full  Champions Team Squad Signature Jersey Coa 24 25 2024 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/liverpool-full-2024-signed-champions-team-squad-signature-jersey-shirt-coa-24-25-qndvox4i" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Liverpool Full  Champions Team Squad Signature Jersey Coa 24 25 2024 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/jurgen-klopp-signed-liverpool-23-24-final-home-jersey-shirt-coa-2024" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Jurgen Klopp Liverpool 23 24 Final Jersey Coa 2024 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/trent-alexander-arnold-signed-liverpool-24-25-home-jersey-shirt-coa-2024" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Trent Alexander Arnold Liverpool 24 25 Jersey Coa 2024 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/liverpool-full-2020-signed-champions-team-squad-signature-jersey-shirt-coa-2020" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Liverpool Full  Champions Team Squad Signature Jersey Coa 2020 2020 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/mo-salah-signed-liverpool-19-20-ucl-final-home-jersey-shirt-coa-2020" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Mo Salah Liverpool 19 20 Ucl Final Jersey Coa 2020 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/diogo-jota-signed-liverpool-20-21-debut-home-jersey-shirt-coa-2020" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Diogo Jota Liverpool 20 21 Debut Jersey Coa 2020 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/steven-gerrard-signed-liverpool-14-15-final-home-jersey-shirt-coa-2015-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Steven Gerrard Liverpool 14 15 Final Jersey Coa 2015 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/luis-suarez-signed-liverpool-home-record-13-14-jersey-shirt-coa-2013" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Luis Suarez Liverpool Record 13 14 Jersey Coa 2013 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/liverpool-full-2005-signed-istanbul-squad-signature-jersey-shirt-coa-04-05" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Liverpool Full  Istanbul Squad Signature Jersey Coa 04 05 2005 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/steven-gerrard-signed-liverpool-04-05-ucl-final-home-jersey-shirt-coa-2005-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Steven Gerrard Liverpool 04 05 Ucl Final Jersey Coa 2005 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/diogo-jota-signed-liverpool-24-25-home-tribute-jersey-shirt-coa-1996-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Diogo Jota Liverpool 24 25 Tribute Jersey 1996-20 Home Shirt Signed Coa #25</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Arsenal</span>
+        <span class="club-count">10</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/arsenal-full-2025-signed-team-squad-signature-jersey-shirt-coa-25-26" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Arsenal Full  Team Squad Signature Jersey Coa 25 26 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/arsenal-full-2025-signed-champions-team-squad-signature-jersey-shirt-coa-25-26" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Arsenal Full  Champions Team Squad Signature Jersey Coa 25 26 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/declan-rice-signed-arsenal-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Declan Rice Arsenal 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/bukayo-saka-signed-arsenal-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Bukayo Saka Arsenal 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/viktor-gy-keres-signed-arsenal-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Viktor Gy Keres Arsenal 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/bukayo-saka-signed-arsenal-24-25-home-jersey-shirt-coa-2024" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Bukayo Saka Arsenal 24 25 Jersey Coa 2024 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/thierry-henry-signed-arsenal-05-06-home-jersey-shirt-coa-2005-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Thierry Henry Arsenal 05 06 Jersey Coa 2005 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/arsenal-full-2004-signed-invincibles-team-squad-signature-jersey-shirt-coa-03-04-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Arsenal Full  Invincibles Team Squad Signature Jersey Coa 03 04 2004 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/thierry-henry-signed-arsenal-03-04-home-jersey-shirt-coa-2003" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Thierry Henry Arsenal 03 04 Jersey Coa 2003 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/thierry-henry-signed-arsenal-03-04-home-jersey-shirt-coa-2003-ctiiyg0q" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Thierry Henry Arsenal 03 04 Jersey Coa 2003 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Chelsea</span>
+        <span class="club-count">13</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/chelsea-full-2025-signed-team-squad-signature-jersey-shirt-coa-25-26" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Chelsea Full  Team Squad Signature Jersey Coa 25 26 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/chelsea-full-2025-signed-chelsea-jersey-club-world-cup-champions-25-26-coa" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Chelsea Full  Chelsea Club Champions 25 26 Coa 2025 Jersey World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/cole-palmer-signed-chelsea-jersey-club-world-cup-champions-25-26-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Cole Palmer Chelsea Club Champions 25 26 Coa 2025 Jersey World Cup</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/estevao-willian-signed-chelsea-25-26-home-shirt-jersey-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Estevao Willian Chelsea 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/moises-caicedo-signed-chelsea-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Moises Caicedo Chelsea 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/cole-palmer-signed-chelsea-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Cole Palmer Chelsea 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/cole-palmer-signed-chelsea-24-25-home-jersey-shirt-coa-2024" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Cole Palmer Chelsea 24 25 Jersey Coa 2024 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/cole-palmer-signed-chelsea-23-24-debut-home-jersey-shirt-coa-2023" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Cole Palmer Chelsea 23 24 Debut Jersey Coa 2023 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/eden-hazard-signed-chelsea-15-16-home-jersey-shirt-coa-2015" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Eden Hazard Chelsea 15 16 Jersey Coa 2015 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/fernando-torres-signed-chelsea-ucl-final-11-12-home-jersey-shirt-coa-2012" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Fernando Torres Chelsea Ucl Final 11 12 Jersey Coa 2012 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/frank-lampard-signed-chelsea-ucl-final-11-12-home-jersey-shirt-coa-2012" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Frank Lampard Chelsea Ucl Final 11 12 Jersey Coa 2012 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/didier-drogba-signed-chelsea-ucl-final-11-12-home-jersey-shirt-coa-2012" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Didier Drogba Chelsea Ucl Final 11 12 Jersey Coa 2012 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/gianfranco-zola-signed-chelsea-home-97-98-home-jersey-shirt-coa-1997-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Gianfranco Zola Chelsea 97 98 Jersey Coa 1997 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Tottenham</span>
+        <span class="club-count">3</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/tottenham-spurs-team-signed-24-25-europa-league-winners-shirt-jersey-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Tottenham Spurs Team 24 25Pa League Winners Jersey Coa 2025 Shirt Euro</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/son-heung-min-signed-tottenham-spurs-europa-league-final-signature-shirt-jersey-coa-24-25" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Son Heung Min Tottenham Spurspa League Final Signature Jersey Coa 24 25 Shirt Euro</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/son-heung-min-signed-tottenham-spurs-home-signature-shirt-jersey-coa-23-24" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Son Heung Min Tottenham Spurs Signature Jersey Coa 23 24 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Aston Villa</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/aston-villa-full-2025-signed-team-squad-signature-jersey-shirt-coa-25-26" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Aston Villa Full  Team Squad Signature Jersey Coa 25 26 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/aston-villa-team-signed-25-26-europa-league-winners-shirt-jersey-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Aston Villa Team 25 26Pa League Winners Jersey Coa 2025 Shirt Euro</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Crystal Palace</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/crystal-palace-team-signed-24-25-fa-cup-winners-shirt-jersey-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Crystal Palace Team 24 25 Fa Cup Winners Jersey Coa 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/crystal-palace-team-signed-25-26-conference-league-winners-shirt-jersey-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Crystal Palace Team 25 26 Conference League Winners Jersey Coa 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Leicester City</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/jamie-vardy-signed-leicester-city-15-16-winners-home-jersey-shirt-coa-2016-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Jamie Vardy Leicester City 15 16 Winners Jersey Coa 2016 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="league-section" id="bundesliga">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">Bundesliga</span>
+      <span class="league-count">2 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Borussia Dortmund</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/marco-reus-signed-borussia-dortmund-22-23-home-jersey-shirt-coa-2022" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Marco Reus Borussia Dortmund 22 23 Jersey Coa 2022 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Bayern Munich</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/harry-kane-signed-bayern-munich-23-24-debut-home-jersey-shirt-coa-2023" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Harry Kane Bayern Munich 23 24 Debut Jersey Coa 2023 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="league-section" id="serie-a">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">Serie A</span>
+      <span class="league-count">10 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Ac Milan</span>
+        <span class="club-count">8</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/rafael-leao-signed-ac-milan-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Rafael Leao Ac Milan 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/zlatan-ibrahimovic-signed-ac-milan-22-23-home-final-jersey-shirt-coa-2022" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Zlatan Ibrahimovic Ac Milan 22 23 Final Jersey Coa 2022 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/ronaldinho-ga-cho-signed-ac-milan-09-10-home-jersey-shirt-coa-2010-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Ronaldinho Ga Cho Ac Milan 09 10 Jersey Coa 2010 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/paolo-maldini-signed-ac-milan-jersey-2010-final-home-shirt-jersey-coa-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Paolo Maldini Ac Milan Jersey  Final Jersey Coa 2010 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kaka-signed-ac-milan-2007-ucl-final-white-shirt-jersey-coa-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Kaka Ac Milan  Ucl Final White Jersey Coa 2007 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/andriy-shevchenko-signed-ac-milan-06-07-home-jersey-shirt-coa-2006-07-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Andriy Shevchenko Ac Milan 06 07 Jersey Coa 2006-07 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/paolo-maldini-signed-ac-milan-jersey-06-07-home-shirt-jersey-coa-retro-2006" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Paolo Maldini Ac Milan Jersey 06 07 Jersey Coa 2006 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kaka-signed-ac-milan-06-07-home-jersey-shirt-coa-2006-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Kaka Ac Milan 06 07 Jersey Coa 2006 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Juventus</span>
+        <span class="club-count">2</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/andres-pirlo-signed-juventus-14-15-home-jersey-shirt-coa-2015-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Andres Pirlo Juventus 14 15 Jersey Coa 2015 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/alessandro-del-piero-signed-juventus-97-98-home-jersey-shirt-coa-1998-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Alessandro Del Piero Juventus 97 98 Jersey Coa 1998 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="league-section" id="ligue-1">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">Ligue 1</span>
+      <span class="league-count">37 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Om</span>
+        <span class="club-count">35</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/phil-foden-signed-man-city-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Phil Foden Man City 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/marcus-rashford-signed-barcelona-25-26-home-14-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Marcus Rashford Barcelona 25 26 14 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/erling-haaland-signed-man-city-25-26-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Erling Haaland Man City 25 26 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/robert-lewandowski-signed-barcelona-25-26-home-9-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Robert Lewandowski Barcelona 25 26 9 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/raphina-signed-barcelona-25-26-home-11-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Raphina Barcelona 25 26 11 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lamine-yamal-signed-barcelona-25-26-home-10-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lamine Yamal Barcelona 25 26 10 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/pep-guardiola-signed-man-city-25-26-final-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Pep Guardiola Man City 25 26 Final Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/raphina-signed-barcelona-24-25-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Raphina Barcelona 24 25 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lamine-yamal-signed-barcelona-24-25-home-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lamine Yamal Barcelona 24 25 Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kevin-de-bruyne-signed-man-city-24-25-final-home-jersey-shirt-coa-2025-jvzmubr0" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Kevin De Bruyne Man City 24 25 Final Jersey Coa 2025 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/erling-haaland-signed-man-city-22-23-ucl-winning-home-jersey-shirt-coa-2022" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Erling Haaland Man City 22 23 Ucl Winning Jersey Coa 2022 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lionel-messi-signed-barcelona-19-20-home-jersey-shirt-coa-retro-2019" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Barcelona 19 20 Jersey Coa 2019 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/francesco-totti-signed-roma-final-jersey-shirt-coa-2017-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Francesco Totti Roma Final Jersey Coa 2017 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/andr-s-iniesta-signed-barcelona-17-18-infinity-final-home-jersey-shirt-coa-2017" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Andr S Iniesta Barcelona 17 18 Infinity Final Jersey Coa 2017 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/neymar-jr-signed-barcelona-last-17-18-home-jersey-shirt-coa-2017" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Neymar Jr Barcelona Last 17 18 Jersey Coa 2017 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/neymar-jr-signed-barcelona-16-17-home-jersey-shirt-coa-2016" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Neymar Jr Barcelona 16 17 Jersey Coa 2016 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lionel-messi-signed-barcelona-15-16-home-jersey-shirt-coa-retro-2015" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Barcelona 15 16 Jersey Coa 2015 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lionel-messi-signed-barcelona-14-15-home-ucl-jersey-shirt-coa-retro-2015" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Barcelona 14 15 Ucl Jersey Coa 2015 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/tres-amigos-signed-messi-neymar-suarez-barcelona-jersey-2014-15-home-shirt-coa" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Tres Amigos Messi Neymar Suarez Barcelona Jersey  Coa 2014-15 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/sergio-aguero-signed-man-city-11-12-home-jersey-shirt-coa-2012" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Sergio Aguero Man City 11 12 Jersey Coa 2012 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/philipp-lahm-signed-bayern-12-13-ucl-final-home-jersey-shirt-coa-2012-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Philipp Lahm Bayern 12 13 Ucl Final Jersey Coa 2012 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/neymar-jr-santos-signed-shirt-jersey-2012-home-kit-coa-retro-style" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Neymar Jr Santos Jersey  Kit Coa Style 2012 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/andr-s-iniesta-signed-barcelona-10-11-home-ucl-final-jersey-shirt-coa-2011-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Andr S Iniesta Barcelona 10 11 Ucl Final Jersey Coa 2011 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/alan-shearer-signed-newcastle-05-07-home-jersey-shirt-coa-2007-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Alan Shearer Newcastle 05 07 Jersey Coa 2007 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lionel-messi-signed-barcelona-04-05-home-ucl-30-jersey-shirt-coa-2005-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Barcelona 04 05 Ucl 30 Jersey Coa 2005 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/ronaldinho-ga-cho-signed-barcelona-04-05-home-ucl-jersey-shirt-coa-2005-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Ronaldinho Ga Cho Barcelona 04 05 Ucl Jersey Coa 2005 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/stephen-curry-signed-signature-golden-state-warriors-white-home-shirt-jersey-coa" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Stephen Curry Signature Golden State Warriors White Jersey Coa Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/derrick-rose-signed-signature-chicago-bulls-red-home-shirt-jersey-coa-15-16-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Derrick Rose Signature Chicago Bulls Red Jersey Coa 15 16 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/luis-suarez-signed-barcelona-16-17-home-ucl-jersey-shirt-coa-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Luis Suarez Barcelona 16 17 Ucl Jersey Coa Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/stephen-curry-signed-signature-golden-state-warriors-blue-home-shirt-jersey-coa-22-23" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Stephen Curry Signature Golden State Warriors Blue Jersey Coa 22 23 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lionel-messi-signed-barcelona-20-21-home-final-jersey-shirt-coa-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Barcelona 20 21 Final Jersey Coa Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lebron-james-signed-signature-la-lakers-yellow-home-shirt-jersey-coa-24-25" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lebron James Signature La Lakers Yellow Jersey Coa 24 25 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lebron-james-signed-signature-la-lakers-yellow-home-shirt-jersey-coa-21-22" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lebron James Signature La Lakers Yellow Jersey Coa 21 22 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lionel-messi-signed-barcelona-16-17-home-ucl-jersey-shirt-coa-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Barcelona 16 17 Ucl Jersey Coa Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/luka-doncic-signed-don-i-signature-la-lakers-yellow-home-shirt-jersey-coa-24-25" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Luka Doncic Don I Signature La Lakers Yellow Jersey Coa 24 25 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Ol</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/stephen-curry-signed-4x-champ-21-22-golden-state-warriors-jersey-coa" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Stephen Curry 4X Champ 21 22 Golden State Warriors Coa Jersey Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Psg</span>
+        <span class="club-count">1</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/neymar-jr-signed-psg-paris-21-22-home-jersey-shirt-coa-2021" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Neymar Jr Psg Paris 21 22 Jersey Coa 2021 Home Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="league-section" id="other-leagues">
+    <div class="league-header">
+      <span class="arrow">▾</span>
+      <span class="league-title">Other Leagues</span>
+      <span class="league-count">10 products</span>
+    </div>
+    <div class="league-body">
+    <div class="club-block">
+      <div class="club-header">
+        <span class="arrow">▾</span>
+        <span class="club-name">Other</span>
+        <span class="club-count">10</span>
+      </div>
+      <div class="product-grid">
+      <a href="https://ovojersey.com/products/lionel-messi-signed-special-goat-25-26-career-legacy-jersey-shirt-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lionel Messi Special Goat 25 26 Career Legacy Jersey Coa 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/man-city-team-signed-25-26-fa-cup-winners-shirt-jersey-coa-2025" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Man City Team 25 26 Fa Cup Winners Jersey Coa 2025 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/newcastle-full-2024-signed-newcastle-jersey-carabao-cup-winners-24-25-coa" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Newcastle Full  Newcastle Carabao Cup Winners 24 25 Coa 2024 Jersey Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/man-city-treble-2022-23-signed-jersey-full-team-squad-autographs-coa-2022" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Man City Treble  Full Team Squad Autographs Coa 2022 2022-23 Jersey Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kobe-bryant-signed-los-angeles-lakers-finals-8-signature-jersey-shirt-coa-00-01" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Kobe Bryant Los Angeles Lakers Finals 8 Signature Jersey Coa 00 01 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/lebron-james-signed-signature-la-lakers-white-shirt-jersey-coa-24-25" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Lebron James Signature La Lakers White Jersey Coa 24 25 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/luka-doncic-signed-don-i-signature-dallas-mavericks-white-shirt-jersey-coa-21-22" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Luka Doncic Don I Signature Dallas Mavericks White Jersey Coa 21 22 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kobe-bryant-signed-los-angeles-lakers-8-signature-jersey-shirt-coa-00-01" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Kobe Bryant Los Angeles Lakers 8 Signature Jersey Coa 00 01 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/sergio-ag-ero-signed-man-city-jersey-20-21-coa-final-season-retro" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Sergio Ag Ero Man City 20 21 Coa Final Season Jersey Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      <a href="https://ovojersey.com/products/kobe-bryant-signed-los-angeles-lakers-24-signature-jersey-shirt-coa-06-07" target="_blank" rel="noopener noreferrer" class="product-card" data-aud="other">
+        <span class="icon">👕</span>
+        <span class="text">Kobe Bryant Los Angeles Lakers 24 Signature Jersey Coa 06 07 Shirt Signed</span>
+        <span class="badge badge-other">·</span>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+<div class="pager">
+<a href="page13.html">‹</a><a href="page1.html">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page6.html">6</a><a href="page7.html">7</a><a href="page8.html">8</a><a href="page9.html">9</a><a href="page10.html">10</a><a href="page11.html">11</a><a href="page12.html">12</a><a href="page13.html">13</a><span class="current">14</span><a href="page15.html">15</a><a href="page16.html">16</a><a href="page15.html">›</a>
+</div>
+<button class="back-top" id="backTop">↑</button>
+<script>
+let dark=localStorage.getItem('darkMode')==='1';
+const themeBtn=document.getElementById('themeBtn');
+function applyTheme(){if(dark){document.documentElement.setAttribute('data-theme','dark');themeBtn.textContent='☀️ Light'}else{document.documentElement.removeAttribute('data-theme');themeBtn.textContent='🌙 Dark'}}
+applyTheme();
+themeBtn.addEventListener('click',()=>{dark=!dark;localStorage.setItem('darkMode',dark?'1':'0');applyTheme()});
+// Collapse
+document.querySelectorAll('.league-header').forEach(h=>{h.addEventListener('click',()=>{const b=h.nextElementSibling;const a=h.querySelector('.arrow');if(b.style.display==='none'){b.style.display='block';a.textContent='▾'}else{b.style.display='none';a.textContent='▿'}})});
+document.querySelectorAll('.club-header').forEach(h=>{h.addEventListener('click',()=>{const g=h.nextElementSibling;const a=h.querySelector('.arrow');if(g.style.display==='none'){g.style.display='grid';a.textContent='▾'}else{g.style.display='none';a.textContent='▿'}})});
+let globalOpen=true;
+document.getElementById('toggleAllBtn').addEventListener('click',()=>{globalOpen=!globalOpen;document.querySelectorAll('.league-body,.product-grid').forEach(g=>{g.style.display=globalOpen?(g.classList.contains('product-grid')?'grid':'block'):'none'});document.querySelectorAll('.arrow').forEach(a=>{a.textContent=globalOpen?'▾':'▿'})});
+// Search
+const searchInput=document.getElementById('searchInput');
+const productCards=document.querySelectorAll('.product-card');
+const linkCountInfo=document.getElementById('linkCountInfo');
+productCards.forEach(c=>{c._text=c.querySelector('.text').textContent.toLowerCase()});
+linkCountInfo.innerText='Total: '+productCards.length+' products';
+document.addEventListener('keydown',function(e){if(e.altKey&&e.key.toLowerCase()==='s'){e.preventDefault();searchInput.focus()}if(e.key==='Escape'){searchInput.value='';searchInput.dispatchEvent(new Event('input'))}});
+searchInput.addEventListener('input',function(){const kw=this.value.toLowerCase().trim();productCards.forEach(c=>{const txt=c._text;const tEl=c.querySelector('.text');if(!kw){c.style.display='';tEl.innerHTML=tEl.textContent;return}if(txt.includes(kw)){c.style.display='';const reg=new RegExp('('+kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');tEl.innerHTML=tEl.textContent.replace(reg,'<mark>$1</mark>');const sec=c.closest('.league-section');const body=sec.querySelector('.league-body');body.style.display='block';sec.querySelector('.league-header .arrow').textContent='▾';const club=c.closest('.club-block');if(club){club.querySelector('.product-grid').style.display='grid';club.querySelector('.club-header .arrow').textContent='▾'}}else{c.style.display='none'}})});
+// URL param search
+const params=new URLSearchParams(window.location.search);
+const q=params.get('q');
+if(q){searchInput.value=q;searchInput.dispatchEvent(new Event('input'))}
+// Filter
+let activeFilter='all';
+document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;productCards.forEach(c=>{if(activeFilter==='all'||c.dataset.aud===activeFilter){c.style.display=''}else{c.style.display='none'}})})});
+// Copy
+document.getElementById('copyLinksBtn').addEventListener('click',async()=>{const links=Array.from(productCards).filter(c=>c.style.display!=='none').map(a=>a.href).join('\n');try{await navigator.clipboard.writeText(links);alert('Copied '+links.split('\n').length+' URLs!')}catch(e){alert('Copy failed')}});
+document.getElementById('copyTextBtn').addEventListener('click',async()=>{const names=Array.from(productCards).filter(c=>c.style.display!=='none').map(a=>a.querySelector('.text').textContent).join('\n');try{await navigator.clipboard.writeText(names);alert('Copied '+names.split('\n').length+' names!')}catch(e){alert('Copy failed')}});
+// Back to top
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>{backTop.style.display=window.scrollY>400?'flex':'none'});
+backTop.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+// Hash scroll
+if(window.location.hash){setTimeout(()=>{const el=document.getElementById(window.location.hash.substring(1));if(el)el.scrollIntoView({behavior:'smooth',block:'start'})},300)}
+</script>
+</body>
+</html>
