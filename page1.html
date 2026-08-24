@@ -164,12 +164,16 @@ body {
   margin-bottom: 28px;
 }
 
-.category-section h2 {
+.category-title {
   font-size: 20px;
   margin-bottom: 14px;
   padding-left: 12px;
   border-left: 4px solid var(--accent);
   color: var(--text);
+  cursor: pointer;
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
 
 .link-grid {
@@ -258,8 +262,8 @@ body {
 
 .pagination .disabled {
   opacity: .35;
-  cursor: not-allowed;
-  pointer-events: none;
+  cursor: not‑allowed;
+  pointer‑events: none;
 }
 
 .theme-btn {
@@ -327,23 +331,18 @@ mark {
   body {
     padding: 18px 16px 32px;
   }
-
   .site-header h1 {
     font-size: 24px;
   }
-
   .link-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .toolbar {
     padding: 14px;
   }
-
   .pagination {
     gap: 6px;
   }
-
   .pagination a,
   .pagination span {
     min-width: 36px;
@@ -368,13 +367,13 @@ mark {
     <div class="page-title">Page 1</div>
   </div>
   <h1>Football Jersey Category Index</h1>
-  <p>Listing page 1 · National‑teams only football jersey categories</p>
+  <p>Listing page 1 · National‑teams only football jersey categories. Click category title to toggle, or use global switch.</p>
 </div>
 
 <div class="toolbar">
   <div class="search-row">
     <input type="text" id="searchInput" placeholder="Search team name...">
-    <button class="btn" id="toggleAllBtn">Expand / Collapse</button>
+    <button class="btn" id="toggleAllBtn">Expand / Collapse All</button>
     <button class="btn" id="copyLinksBtn">Copy URLs</button>
     <button class="btn" id="copyTextBtn">Copy Names</button>
   </div>
@@ -382,7 +381,7 @@ mark {
 </div>
 
 <div class="category-section">
-  <h2>Europe National Teams</h2>
+  <h2 class="category-title"><span class="arrow">▾</span> Europe National Teams</h2>
   <div class="link-grid">
     <a href="https://ovojersey.com/categories/austria-national-football-team-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🇦🇹</span>
@@ -480,7 +479,7 @@ mark {
 </div>
 
 <div class="category-section">
-  <h2>South America National Teams</h2>
+  <h2 class="category-title"><span class="arrow">▾</span> South America National Teams</h2>
   <div class="link-grid">
     <a href="https://ovojersey.com/categories/argentina-national-football-team-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🇦🇷</span>
@@ -514,7 +513,7 @@ mark {
 </div>
 
 <div class="category-section">
-  <h2>North & Central America</h2>
+  <h2 class="category-title"><span class="arrow">▾</span> North & Central America</h2>
   <div class="link-grid">
     <a href="https://ovojersey.com/categories/guatemala" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🇬🇹</span>
@@ -540,7 +539,7 @@ mark {
 </div>
 
 <div class="category-section">
-  <h2>Africa National Teams</h2>
+  <h2 class="category-title"><span class="arrow">▾</span> Africa National Teams</h2>
   <div class="link-grid">
     <a href="https://ovojersey.com/categories/tunisia-national-football-team-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🇹🇳</span>
@@ -586,7 +585,7 @@ mark {
 </div>
 
 <div class="category-section">
-  <h2>Asia & Oceania National Teams</h2>
+  <h2 class="category-title"><span class="arrow">▾</span> Asia & Oceania National Teams</h2>
   <div class="link-grid">
     <a href="https://ovojersey.com/categories/japan-national-football-team-jersey" target="_blank" rel="noopener noreferrer" class="link-card">
       <span class="icon">🇯🇵</span>
@@ -643,92 +642,101 @@ function applyTheme() {
     themeBtn.textContent = '🌙 Dark';
   }
 }
-
 applyTheme();
-
-themeBtn.addEventListener('click', () => {
+themeBtn.addEventListener('click', ()=>{
   dark = !dark;
   localStorage.setItem('darkMode', dark ? '1' : '0');
   applyTheme();
 });
 
+// 分类标题独立点击折叠
+document.querySelectorAll('.category-title').forEach(titleEl=>{
+  titleEl.addEventListener('click',()=>{
+    const grid = titleEl.nextElementSibling;
+    const arrow = titleEl.querySelector('.arrow');
+    if(grid.style.display === 'none'){
+      grid.style.display='grid';
+      arrow.textContent='▾';
+    }else{
+      grid.style.display='none';
+      arrow.textContent='▿';
+    }
+  })
+});
+
+// 全局总开关
+let globalOpen = true;
+document.getElementById('toggleAllBtn').addEventListener('click',()=>{
+  globalOpen = !globalOpen;
+  document.querySelectorAll('.category-section').forEach(sec=>{
+    const grid = sec.querySelector('.link-grid');
+    const arrow = sec.querySelector('.category-title .arrow');
+    if(globalOpen){
+      grid.style.display='grid';
+      arrow.textContent='▾';
+    }else{
+      grid.style.display='none';
+      arrow.textContent='▿';
+    }
+  })
+});
+
 const searchInput = document.getElementById('searchInput');
 const linkCards = document.querySelectorAll('.link-card');
 const linkCountInfo = document.getElementById('linkCountInfo');
-
-linkCards.forEach(card => {
+linkCards.forEach(card=>{
   card._text = card.querySelector('.text').textContent.toLowerCase();
 });
-
 linkCountInfo.innerText = `Total links on current page: ${linkCards.length}`;
 
-document.addEventListener('keydown', function (e) {
-  if (e.altKey && e.key.toLowerCase() === 's') {
-    e.preventDefault();
-    searchInput.focus();
-  }
-  if (e.key === 'Escape') {
-    searchInput.value = '';
-    searchInput.dispatchEvent(new Event('input'));
-  }
+document.addEventListener('keydown',function(e){
+  if(e.altKey && e.key.toLowerCase()==='s'){ e.preventDefault(); searchInput.focus(); }
+  if(e.key === 'Escape'){ searchInput.value=''; searchInput.dispatchEvent(new Event('input')); }
 });
 
-searchInput.addEventListener('input', function () {
+searchInput.addEventListener('input',function(){
   const kw = this.value.toLowerCase().trim();
-
-  linkCards.forEach(card => {
+  linkCards.forEach(card=>{
     const txt = card._text;
     const textEl = card.querySelector('.text');
-
-    if (!kw) {
-      card.style.display = '';
+    if(!kw){
+      card.style.display='';
       textEl.innerHTML = textEl.textContent;
       return;
     }
-
-    if (txt.includes(kw)) {
-      card.style.display = '';
-      const reg = new RegExp(`(${kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-      textEl.innerHTML = textEl.textContent.replace(reg, '<mark>$1</mark>');
-    } else {
-      card.style.display = 'none';
+    if(txt.includes(kw)){
+      card.style.display='';
+      const reg = new RegExp(`(${kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi');
+      textEl.innerHTML = textEl.textContent.replace(reg,'<mark>$1</mark>');
+      //搜索命中自动展开父分类
+      const sec = card.closest('.category-section');
+      const grid = sec.querySelector('.link-grid');
+      const arrow = sec.querySelector('.category-title .arrow');
+      grid.style.display='grid';
+      arrow.textContent='▾';
+    }else{
+      card.style.display='none';
     }
-  });
+  })
 });
 
-let listOpen = true;
-document.getElementById('toggleAllBtn').addEventListener('click', () => {
-  const sections = document.querySelectorAll('.link-grid');
-  listOpen = !listOpen;
-  sections.forEach(s => s.style.display = listOpen ? '' : 'none');
+document.getElementById('copyLinksBtn').addEventListener('click',async ()=>{
+  const links = Array.from(linkCards).map(a=>a.href).join('\n');
+  try{ await navigator.clipboard.writeText(links); alert(`Copied ${links.split('\n').length} full URLs!`); }
+  catch(e){ alert('Copy failed, please manually select text.'); }
 });
 
-document.getElementById('copyLinksBtn').addEventListener('click', async () => {
-  const links = Array.from(linkCards).map(a => a.href).join('\n');
-  try {
-    await navigator.clipboard.writeText(links);
-    alert(`Copied ${links.split('\n').length} full URLs!`);
-  } catch (e) {
-    alert('Copy failed, please manually select text.');
-  }
-});
-
-document.getElementById('copyTextBtn').addEventListener('click', async () => {
-  const names = Array.from(linkCards).map(a => a.querySelector('.text').textContent).join('\n');
-  try {
-    await navigator.clipboard.writeText(names);
-    alert(`Copied ${names.split('\n').length} team names!`);
-  } catch (e) {
-    alert('Copy failed, please manually select text.');
-  }
+document.getElementById('copyTextBtn').addEventListener('click',async ()=>{
+  const names = Array.from(linkCards).map(a=>a.querySelector('.text').textContent).join('\n');
+  try{ await navigator.clipboard.writeText(names); alert(`Copied ${names.split('\n').length} team names!`); }
+  catch(e){ alert('Copy failed, please manually select text.'); }
 });
 
 const backTop = document.getElementById('backTop');
-window.addEventListener('scroll', () => {
-  backTop.style.display = window.scrollY > 400 ? 'flex' : 'none';
+window.addEventListener('scroll',()=>{
+  backTop.style.display = window.scrollY>400 ? 'flex':'none';
 });
-
-backTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+backTop.onclick = ()=> window.scrollTo({top:0,behavior:'smooth'});
 </script>
 </body>
 </html>
