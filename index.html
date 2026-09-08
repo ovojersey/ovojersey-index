@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheap Football Jerseys | Club & National Team Kits | OVO Jersey Index</title>
+    <meta name="description" content="Browse over 10,000 cheap football jerseys: Premier League, Bundesliga, La Liga, Serie A, Ligue 1 clubs and national team kits. Men's, women's and kids football shirts with fast delivery.">
+    <link rel="canonical" href="https://ovojersey.github.io/ovojersey-index/">
+    <meta name="robots" content="index, follow">
+    <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,Helvetica,sans-serif}
+:root{
+    --bg:#f8f9fa;--card:#ffffff;--text:#212529;--text-secondary:#6c757d;
+    --border:#e9ecef;--primary:#0057b8;--primary-hover:#004494;
+    --tag-bg:#f1f3f5;--shadow:0 2px 8px rgba(0,0,0,0.05)
+}
+[data-theme="dark"]{
+    --bg:#121212;--card:#1e1e1e;--text:#e0e0e0;--text-secondary:#9e9e9e;
+    --border:#333333;--primary:#4d9fff;--primary-hover:#6ab0ff;
+    --tag-bg:#2a2a2a;--shadow:0 2px 8px rgba(0,0,0,0.3)
+}
+body{background:var(--bg);color:var(--text);line-height:1.6;transition:background 0.3s,color 0.3s}
+.container{max-width:1280px;margin:0 auto;padding:24px}
+
+.top-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.search-box{flex:1;min-width:240px;max-width:400px}
+.search-box input{width:100%;padding:10px 16px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);font-size:14px}
+.action-btns{display:flex;gap:8px}
+.action-btns button{padding:8px 14px;border:1px solid var(--border);border-radius:6px;background:var(--card);color:var(--text);cursor:pointer;font-size:13px;transition:all 0.2s}
+.action-btns button:hover{background:var(--tag-bg)}
+.theme-btn{background:var(--primary)!important;color:#fff!important;border-color:var(--primary)!important}
+.theme-btn:hover{background:var(--primary-hover)!important}
+
+.breadcrumb{font-size:14px;margin-bottom:16px;color:var(--text-secondary)}
+.breadcrumb a{color:var(--primary);text-decoration:none}
+
+.page-header{background:var(--card);padding:28px 32px;border-radius:10px;box-shadow:var(--shadow);margin-bottom:24px;border-left:4px solid var(--primary)}
+.page-header h1{font-size:26px;color:var(--text);margin-bottom:6px}
+.page-header p{color:var(--text-secondary);font-size:15px}
+
+.jump-section{margin-bottom:20px}
+.jump-label{font-size:13px;color:var(--text-secondary);margin-bottom:8px;font-weight:600}
+.jump-tags{display:flex;flex-wrap:wrap;gap:8px}
+.jump-tags a{padding:6px 12px;background:var(--tag-bg);border-radius:20px;font-size:12px;text-decoration:none;color:var(--text);border:1px solid var(--border);transition:all 0.2s}
+.jump-tags a:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+.club-block{background:var(--card);border-radius:10px;margin-bottom:12px;box-shadow:var(--shadow);border:1px solid var(--border);overflow:hidden}
+.club-head{padding:16px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:var(--card);transition:background 0.2s}
+.club-head:hover{background:var(--tag-bg)}
+.club-name{font-size:16px;font-weight:600;color:var(--text)}
+.toggle-icon{font-size:18px;color:var(--text-secondary);font-weight:300}
+.club-body{padding:0 24px;max-height:0;overflow:hidden;transition:max-height 0.3s ease}
+.club-block.open .club-body{max-height:2000px;padding:0 24px 20px}
+
+.season-group{padding:14px 0;border-bottom:1px solid var(--border)}
+.season-group:last-child{border-bottom:none}
+.season-head{cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:4px 0}
+.season-title{font-size:14px;font-weight:600;color:var(--primary)}
+.season-body{padding-top:10px;display:none}
+.season-group.open .season-body{display:block}
+
+.jersey-links{display:flex;flex-wrap:wrap;gap:8px}
+.jersey-links a{padding:6px 12px;background:var(--tag-bg);border:1px solid var(--border);border-radius:6px;font-size:13px;text-decoration:none;color:var(--text);transition:all 0.2s}
+.jersey-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+.pagination{display:flex;justify-content:space-between;margin-top:28px}
+.pagination a{padding:10px 20px;background:var(--card);border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:14px;transition:all 0.2s}
+.pagination a:hover{background:var(--tag-bg)}
+
+footer{text-align:center;margin-top:36px;padding:20px;color:var(--text-secondary);font-size:13px}
+
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:32px}
+.card{background:var(--card);border-radius:10px;padding:22px;text-decoration:none;color:var(--text);box-shadow:var(--shadow);transition:all 0.25s ease;border:1px solid var(--border)}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,0.1);border-color:var(--primary)}
+.card h3{font-size:18px;color:var(--primary);margin-bottom:8px}
+.card p{font-size:14px;color:var(--text-secondary)}
+
+.section-title{font-size:20px;font-weight:600;margin-bottom:16px;color:var(--text);padding-left:8px;border-left:4px solid var(--primary)}
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="top-bar">
+            <div style="flex:1"></div>
+            <div class="action-btns">
+                <button class="theme-btn" onclick="toggleTheme()">Dark Mode</button>
+            </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg,var(--primary) 0%,var(--primary-hover) 100%);color:#fff;padding:48px 32px;border-radius:12px;margin-bottom:32px;text-align:center">
+            <h1 style="font-size:34px;font-weight:700;margin-bottom:10px">OVO Jersey Index</h1>
+            <p style="font-size:16px;opacity:0.9;margin-bottom:24px">10,000+ Cheap Football Jerseys from Top Leagues & National Teams</p>
+            <div style="max-width:640px;margin:0 auto">
+                <input type="text" placeholder="Search clubs, national teams, players, seasons..." id="searchInput" style="width:100%;padding:14px 20px;border:none;border-radius:8px;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,0.15)">
+            </div>
+        </div>
+
+        <main>
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="card-grid">
+                <a href="page1.html" class="card">
+                    <h3>Club Jerseys</h3>
+                    <p>Premier League, Bundesliga, La Liga, Serie A, Ligue 1 and global club kits</p>
+                </a>
+                <a href="page2.html" class="card">
+                    <h3>National Team Jerseys</h3>
+                    <p>World Cup & Euro national team kits from all continents</p>
+                </a>
+                <a href="page3.html" class="card">
+                    <h3>By Audience</h3>
+                    <p>Men's, Women's, Kids and signed authentic jerseys</p>
+                </a>
+                <a href="page4.html" class="card">
+                    <h3>By Jersey Type</h3>
+                    <p>Home, away, third, training wear and retro classic kits</p>
+                </a>
+            </div>
+
+            <h2 class="section-title">Top Leagues</h2>
+            <div class="jump-tags" style="margin-bottom:32px">
+                <a href="page5.html">Premier League</a>
+                <a href="page6.html">Bundesliga</a>
+                <a href="page7.html">La Liga</a>
+                <a href="page8.html">Serie A</a>
+                <a href="page9.html">Ligue 1</a>
+                <a href="page10.html">Eredivisie</a>
+                <a href="page10.html">Primeira Liga</a>
+                <a href="page11.html">MLS</a>
+                <a href="page11.html">Brasileirão</a>
+            </div>
+
+            <h2 class="section-title">Top National Teams</h2>
+            <div class="jump-tags" style="margin-bottom:32px">
+                <a href="page13.html">England</a>
+                <a href="page13.html">Germany</a>
+                <a href="page13.html">France</a>
+                <a href="page13.html">Spain</a>
+                <a href="page14.html">Brazil</a>
+                <a href="page14.html">Argentina</a>
+                <a href="page15.html">USA</a>
+                <a href="page16.html">Japan</a>
+            </div>
+
+            <nav class="pagination" aria-label="All pages">
+                <span style="padding:10px 12px;color:var(--text-secondary)">Pages:</span>
+                <a href="index.html" class="active">1</a>
+                <a href="page1.html">2</a>
+                <a href="page2.html">3</a>
+                <a href="page3.html">4</a>
+                <a href="page4.html">5</a>
+                <a href="page5.html">6</a>
+                <a href="page6.html">7</a>
+                <a href="page7.html">8</a>
+                <a href="page8.html">9</a>
+                <a href="page9.html">10</a>
+                <a href="page10.html">11</a>
+                <a href="page11.html">12</a>
+                <a href="page12.html">13</a>
+                <a href="page13.html">14</a>
+                <a href="page14.html">15</a>
+                <a href="page15.html">16</a>
+                <a href="page16.html">17</a>
+            </nav>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 OVO Jersey Index. All product links redirect to official store.</p>
+        </footer>
+    </div>
+    <script>
+function toggleClub(el){
+    el.parentElement.classList.toggle('open');
+    el.querySelector('.toggle-icon').textContent = 
+        el.parentElement.classList.contains('open') ? '−' : '+';
+}
+
+function toggleSeason(el){
+    el.parentElement.classList.toggle('open');
+    el.querySelector('span:last-child').textContent = 
+        el.parentElement.classList.contains('open') ? '−' : '+';
+}
+
+function expandAll(){
+    document.querySelectorAll('.club-block').forEach(block=>{
+        block.classList.add('open');
+        block.querySelector('.toggle-icon').textContent = '−';
+    });
+}
+
+function collapseAll(){
+    document.querySelectorAll('.club-block').forEach(block=>{
+        block.classList.remove('open');
+        block.querySelector('.toggle-icon').textContent = '+';
+    });
+}
+
+function toggleTheme(){
+    const html = document.documentElement;
+    if(html.getAttribute('data-theme') === 'dark'){
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme','light');
+    }else{
+        html.setAttribute('data-theme','dark');
+        localStorage.setItem('theme','dark');
+    }
+}
+
+if(localStorage.getItem('theme') === 'dark'){
+    document.documentElement.setAttribute('data-theme','dark');
+}
+
+document.getElementById('searchInput').addEventListener('input',function(e){
+    const keyword = e.target.value.toLowerCase();
+    document.querySelectorAll('.club-block').forEach(block=>{
+        const name = block.querySelector('.club-name').textContent.toLowerCase();
+        block.style.display = name.includes(keyword) ? 'block' : 'none';
+    });
+});
+
+    document.getElementById('searchInput').addEventListener('input',function(e){
+        const keyword = e.target.value.toLowerCase();
+        document.querySelectorAll('.card, .jump-tags a').forEach(el=>{
+            const text = el.textContent.toLowerCase();
+            el.style.display = text.includes(keyword) ? '' : 'none';
+        });
+    });
+    </script>
+</body>
+</html>
