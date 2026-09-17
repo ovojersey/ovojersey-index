@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ovojersey.github.io/ovojersey-index/sitemap.xml
